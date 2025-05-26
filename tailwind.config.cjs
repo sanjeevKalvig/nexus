@@ -9,6 +9,13 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },
+      colors: {
+        gold1: '#CDAB65',
+        gold2: '#F5D5A2',
+      },
+      backgroundImage: {
+        'gold-gradient': 'linear-gradient(to right, #CDAB65, #F5D5A2)',
+      },
     },
   },
   plugins: [],

@@ -9,7 +9,7 @@ const OurPeople = () => {
         <div
           className="w-full h-full bg-[#011925]"
           style={{
-            clipPath: "polygon(0% 30%, 0% 87%, 99% 70%, 100% 0%)",
+            clipPath: "polygon(0% 30%, 0% 85%, 99% 70%, 100% 0%)",
           }}
         ></div>
       </div>

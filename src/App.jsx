@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./components/home/About";
+import AboutUs from "./components/home/AboutUs";
 import ContactUs from "./components/home/ContactUS";
 import Footer from "./components/home/Footer";
 import HeroSection from "./components/home/heroSection";
@@ -11,11 +11,11 @@ export default function App() {
     <>
       <HeroSection />
       <div className="flex h-[6px] ">
-        <div className="bg-gray-300 w-[200px]"></div>
-        <div className="bg-black w-[200px] ml-1"></div>
-        <div className="bg-gray-300 w-[200px] ml-1"></div>
+        <div className="bg-gray-300 w-1/3"></div>
+        <div className="bg-gray-300 w-1/3 ml-1"></div>
+        <div className="bg-gray-300 w-1/3 ml-1"></div>
       </div>
-     {/*  <About/> */}
+      <AboutUs/>
       <OurServices/>
       <OurPeople/>
       <ContactUs/>
