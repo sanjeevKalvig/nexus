@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./components/home/About";
+import ContactUs from "./components/home/ContactUS";
 import HeroSection from "./components/home/heroSection";
 import OurServices from "./components/home/OurServices";
 
@@ -14,6 +15,7 @@ export default function App() {
       </div>
      {/*  <About/> */}
       <OurServices/>
+      <ContactUs/>
     </>
   );
 }
