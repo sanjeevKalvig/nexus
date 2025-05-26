@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="bg-[#071015] text-white px-6 md:px-20 py-20">
+    <section className=" text-white px-6 md:px-20 py-20">
       {/* Header */}
       <div className="flex items-center gap-8 mb-16">
         <h2 className="text-[96px] font-semibold leading-none">

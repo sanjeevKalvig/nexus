@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <section className="relative bg-[#0C1C24] text-white h-full overflow-hidden">
+    <section className="relative  text-white h-full overflow-hidden">
       {/* Top Diagonal Background Strip */}
       <div className="absolute top-[200px] left-0 w-full h-[300px] bg-[#10252E] -skew-y-6 z-0"></div>
 

@@ -1,7 +1,9 @@
 import "./App.css";
 import About from "./components/home/About";
 import ContactUs from "./components/home/ContactUS";
+import Footer from "./components/home/Footer";
 import HeroSection from "./components/home/heroSection";
+import OurPeople from "./components/home/Ourpeople";
 import OurServices from "./components/home/OurServices";
 
 export default function App() {
@@ -15,7 +17,9 @@ export default function App() {
       </div>
      {/*  <About/> */}
       <OurServices/>
+      <OurPeople/>
       <ContactUs/>
+      <Footer/>
     </>
   );
 }
