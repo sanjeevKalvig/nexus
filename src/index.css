@@ -10,3 +10,13 @@
     background-color: #050D11;
   }
 }
+
+.clip-bg {
+  clip-path: polygon(0% 10%, 0% 90%, 100% 80%, 100% 0%);
+}
+
+@media (min-width: 640px) {
+  .clip-bg {
+    clip-path: polygon(0% 30%, 0% 85%, 99% 70%, 100% 0%);
+  }
+}
