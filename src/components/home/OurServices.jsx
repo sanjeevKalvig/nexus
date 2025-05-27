@@ -1,67 +1,84 @@
 import React from "react";
 
-const services = [
-  {
-    id: 1,
-    title: "NEXUS EPC",
-    img: "/assets/nexusepc.png",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 2,
-    title: "Ākāsa",
-    img: "/assets/aakas.png",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-  {
-    id: 3,
-    title: "NEXUS DRIVELINE",
-    img: "/assets/nexusdriveline.png",
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-  },
-];
-
 const OurServices = () => {
   return (
-    <section className="bg-[#071015] text-white py-24 px-4">
+    <section className="text-white py-16 px-4 sm:py-24">
       {/* Heading */}
-      <h2 className="text-[96px] font-semibold text-center mb-20">
+      <h2 className="text-[2.5rem] sm:text-[6rem] font-semibold text-center mb-12 sm:mb-20">
         <span className="text-white">OUR </span>
         <span className="text-[#F4D48D]">SERVICES</span>
       </h2>
 
       {/* Cards Grid */}
-      <div className="  max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-x-20 gap-y-16">
-        {services.map(({ id, title, img, description }) => (
-          <div
-            key={id}
-            className="bg-[#01141E] w-[367px] h-[588px]  p-8 flex flex-col items-center text-center justify-between rounded-[15px] "
-          >
-            {/* Logo */}
-            <div className="w-[150px] h-[210px] flex items-center justify-center mb-6">
-              <img
-                src={img}
-                alt={title}
-                className="w-full h-full object-contain"
-              />
-            </div>
-
-            {/* Text */}
-            <p className="text-gray-300 text-[20px] leading-relaxed">
-              {description.split(" ").slice(0, 12).join(" ")}
-              <br />
-              {description.split(" ").slice(12).join(" ")}
-            </p>
-
-            {/* Button */}
-            <button className="w-[180px] h-[55px] text-[#f2f1ef] text-[20px] bg-[#002538] rounded-[15px]">
-              VIEW MORE
-            </button>
+      <div className="max-w-7xl mx-auto grid place-items-center gap-y-12 sm:grid-cols-2 xl:grid-cols-3 sm:gap-x-20 sm:gap-y-16">
+        {/* Card 1 */}
+        <div className="bg-[#01141E] text-center flex flex-col items-center justify-between
+            w-[13.5969rem] h-[21.7844rem] px-6 py-10 rounded-[15px]
+            sm:w-[367px] sm:h-[588px] sm:p-8">
+          <div className="w-[90px] h-[130px] mb-6 sm:w-[150px] sm:h-[210px] flex items-center justify-center">
+            <img
+              src="/assets/nexusepc.png"
+              alt="NEXUS EPC"
+              className="w-full h-full object-contain"
+            />
           </div>
-        ))}
+          <p className="text-gray-300 text-[0.744rem] font-normal leading-relaxed sm:text-[20px]">
+            Lorem Ipsum is simply dummy text of the printing
+            <br />
+            and typesetting industry.
+          </p>
+          <button className="mt-6 bg-[#002538] text-[#f2f1ef] font-normal rounded-[10px]
+              w-[6.6688rem] h-[2.0375rem] text-[0.744rem]
+              sm:w-[180px] sm:h-[55px] sm:text-[20px] sm:rounded-[15px]">
+            VIEW MORE
+          </button>
+        </div>
+
+        {/* Card 2 */}
+        <div className="bg-[#01141E] text-center flex flex-col items-center justify-between
+            w-[13.5969rem] h-[21.7844rem] px-6 py-10 rounded-[15px]
+            sm:w-[367px] sm:h-[588px] sm:p-8">
+          <div className="w-[80px] h-[110px] mb-6 sm:w-[298px] sm:h-[200px] flex items-center justify-center">
+            <img
+              src="/assets/akash.png"
+              alt="Ākāsa"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <p className="text-gray-300 text-[0.744rem] font-normal leading-relaxed sm:text-[20px]">
+            Lorem Ipsum is simply dummy text of the printing
+            <br />
+            and typesetting industry.
+          </p>
+          <button className="mt-6 bg-[#002538] text-[#f2f1ef] font-normal rounded-[10px]
+              w-[6.6688rem] h-[2.0375rem] text-[0.744rem]
+              sm:w-[180px] sm:h-[55px] sm:text-[20px] sm:rounded-[15px]">
+            VIEW MORE
+          </button>
+        </div>
+
+        {/* Card 3 */}
+        <div className="bg-[#01141E] text-center flex flex-col items-center justify-between
+            w-[13.5969rem] h-[21.7844rem] px-6 py-10 rounded-[15px]
+            sm:w-[367px] sm:h-[588px] sm:p-8">
+          <div className="w-[85px] h-[120px] mb-6 sm:w-[300px] sm:h-[200px] flex items-center justify-center">
+            <img
+              src="/assets/driveline.png"
+              alt="NEXUS DRIVELINE"
+              className="w-full h-full object-contain"
+            />
+          </div>
+          <p className="text-gray-300 text-[0.744rem] font-normal leading-relaxed sm:text-[20px]">
+            Lorem Ipsum is simply dummy text of the printing
+            <br />
+            and typesetting industry.
+          </p>
+          <button className="mt-7 bg-[#002538] text-[#f2f1ef] font-normal rounded-[10px]
+              w-[6.6688rem] h-[2.0375rem] text-[0.744rem]
+              sm:w-[180px] sm:h-[55px] sm:text-[20px] sm:rounded-[15px]">
+            VIEW MORE
+          </button>
+        </div>
       </div>
     </section>
   );

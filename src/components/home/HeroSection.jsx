@@ -2,52 +2,50 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="relative w-full h-screen bg-black text-white overflow-hidden ">
+    <section className="relative w-full h-screen bg-black text-white overflow-hidden">
+      {/* Background Image */}
       <img
         src="/assets/hero.png"
         alt="Industrial Background"
         className="absolute inset-0 w-full h-full object-cover opacity-40"
-         style={{
+        style={{
           width: "130%",
           transform: "translateX(6%)",
         }}
       />
 
-      {/* Top bar with enlarged logo and NECUS text */}
-      <div className="absolute top-[68px] left-[83px] w-[69px] h-[83px]">
-        <div className=" flex items-center">
-          {/* Enlarged logo - adjust h-12 to your preferred size */}
+      {/* Logo Section */}
+      <div className="absolute top-[3.3rem] left-[2.6rem] w-[3rem] h-[3.5rem] sm:top-[4.3rem] sm:left-[5.2rem] sm:w-[4.3rem] sm:h-[5.2rem]">
+        <div className="flex items-center">
           <img
             src="/assets/nexuslogo.png"
             alt="Company Logo"
-            className="h-full w-full" // Increased from h-8 to h-12
+            className="h-full w-full object-contain"
           />
         </div>
       </div>
 
-      {/* Main content - perfectly aligned with logo */}
-      <div className="relative z-10 h-full flex items-center left-[83px] top-[65px]">
-        <div className="">
-          {" "}
-          {/* mt-16 matches top bar height */}
-          <div className="w-full ">
-            <h1 className="text-[96px]  font-bold">
-              <span className="text-[#F5D5A2]">LEADING</span>
-              <span className="block  text-white">INNOVATION</span>
-            </h1>
-            <p className="text-[18px] w-[616px] text-[#F5D5A2]">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
-            <button className="mt-6 w-[128px] border border-[#F5D5A2] text-white px-2 py-2 text-[18px] hover:bg-white hover:text-black transition-all duration-300">
-              Read More
-            </button>
-          </div>
+      {/* Hero Content */}
+      <div className="relative z-10 h-full flex items-center top-[2rem] left-[2rem] sm:top-[4rem] sm:left-[5rem]">
+        <div className="w-full max-w-[90%]">
+          <h1 className="text-[2.8rem] sm:text-[6rem] font-bold leading-none">
+            <span className="text-[#F5D5A2]">LEADING</span>
+            <span className="block text-white">INNOVATION</span>
+          </h1>
+
+          <p className="text-[0.53125rem] sm:text-[1.2rem] text-[#F5D5A2] mt-4 leading-snug">
+            Lorem Ipsum is simply dummy text of the printing and <br />
+            typesetting industry. Lorem Ipsum has been the industry's <br />
+            standard dummy text ever since the 1500s, when an unknown <br />
+            printer took a galley of type and scrambled it to make a <br />
+            type specimen book.
+          </p>
+
+          <button className="mt-6 w-[4rem] h-[1.4rem] font-normal  text-[0.5rem] sm:w-[8rem] sm:h-[2.6rem] sm:py-2 sm:text-[1.2rem] border border-[#F5D5A2] text-white hover:bg-white hover:text-black transition-all duration-300">
+            Read More
+          </button>
         </div>
       </div>
-    
     </section>
   );
 };

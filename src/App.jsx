@@ -10,10 +10,10 @@ export default function App() {
   return (
     <>
       <HeroSection />
-      <div className="flex h-[6px] ">
-        <div className="bg-gray-300 w-1/3"></div>
-        <div className="bg-gray-300 w-1/3 ml-1"></div>
-        <div className="bg-gray-300 w-1/3 ml-1"></div>
+      <div className="flex h-2 justify-between opacity-4">
+        <div className="bg-gray-300 opacity-4 w-[30%]" ></div>
+        <div className="bg-gray-300 w-[30%] "></div>
+        <div className="bg-gray-300 w-[30%]"></div>
       </div>
       <AboutUs/>
       <OurServices/>
