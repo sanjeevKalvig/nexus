@@ -7,7 +7,7 @@ const HeroSection = () => {
       <img
         src="/assets/hero.png"
         alt="Industrial Background"
-        className="absolute inset-0 w-[110%] h-full object-cover opacity-40 scale-[1.2] translate-x-[6%]"
+        className="absolute inset-0 w-[120%] h-full object-cover opacity-40 2xl:scale-[1.2] 2xlplus:scale-[1.2] 2xl:translate-x-[10%] 2xlplus:translate-x-[6%] "
       />
 
       {/* Logo Section */}
@@ -24,7 +24,7 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 h-full flex items-center top-[2rem] left-[2rem] sm:top-[4rem] sm:left-[5rem]">
         <div className="w-full max-w-[90%]">
-          <h1 className="text-[2.8rem] sm:text-[6rem] font-bold leading-none">
+          <h1 className="text-[2.8rem] sm:text-[6rem] font-bold leading-none 2xl:text-[5rem] 2xlplus:text-[7rem]">
             <span className="text-[#F5D5A2]">LEADING</span>
             <span className="block text-white">INNOVATION</span>
           </h1>
