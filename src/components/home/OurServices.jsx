@@ -40,7 +40,7 @@ const OurServices = () => {
             sm:w-[367px] sm:h-[588px] sm:p-8">
           <div className="w-[80px] h-[110px] mb-6 sm:w-[298px] sm:h-[200px] flex items-center justify-center">
             <img
-              src="/assets/akash.png"
+              src="/assets/aakasa2.svg"
               alt="Ākāsa"
               className="w-full h-full object-contain"
             />

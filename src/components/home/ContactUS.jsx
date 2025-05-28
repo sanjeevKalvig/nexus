@@ -51,9 +51,14 @@ const ContactUs = () => {
           />
           <button
             type="submit"
-            className="mt-4 w-fit bg-[#F4D48D] text-black px-6 py-2 text-[16px] font-medium rounded-md hover:bg-[#eac36c] transition xl:z-20 "
+            className="mt-4 w-[86px] h-[34px] bg-[#F4D48D] text-black px-6 py-2 text-[15px] font-semibold rounded-[7px] hover:bg-[#eac36c] transition xl:z-20 flex items-center justify-center gap-2"
           >
             Submit
+            <img
+              src="/assets/submitarrow.svg"
+              alt="Arrow"
+              className="w-4 h-4"
+            />
           </button>
         </div>
       </form>

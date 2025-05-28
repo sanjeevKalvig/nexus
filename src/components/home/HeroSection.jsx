@@ -7,11 +7,7 @@ const HeroSection = () => {
       <img
         src="/assets/hero.png"
         alt="Industrial Background"
-        className="absolute inset-0 w-full h-full object-cover opacity-40"
-        style={{
-          width: "130%",
-          transform: "translateX(6%)",
-        }}
+        className="absolute inset-0 w-[110%] h-full object-cover opacity-40 scale-[1.2] translate-x-[6%]"
       />
 
       {/* Logo Section */}
