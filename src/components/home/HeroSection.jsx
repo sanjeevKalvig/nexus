@@ -24,12 +24,12 @@ const HeroSection = () => {
       {/* Hero Content */}
       <div className="relative z-10 h-full flex items-center top-[2rem] left-[2rem] sm:top-[4rem] sm:left-[5rem]">
         <div className="w-full max-w-[90%]">
-          <h1 className="text-[2.8rem] sm:text-[6rem] font-bold leading-none 2xl:text-[5rem] 2xlplus:text-[7rem]">
+          <h1 className="text-[3rem] sm:text-[6rem] font-bold leading-none 2xl:text-[5rem] 2xlplus:text-[7rem]">
             <span className="text-[#F5D5A2]">LEADING</span>
             <span className="block text-white">INNOVATION</span>
           </h1>
 
-          <p className="text-[0.53125rem] sm:text-[1.2rem] text-[#F5D5A2] mt-4 leading-snug">
+          <p className="text-[1rem] sm:text-[1.2rem] text-[#F5D5A2] mt-4 leading-snug">
             Lorem Ipsum is simply dummy text of the printing and <br />
             typesetting industry. Lorem Ipsum has been the industry's <br />
             standard dummy text ever since the 1500s, when an unknown <br />
@@ -37,7 +37,7 @@ const HeroSection = () => {
             type specimen book.
           </p>
 
-          <button className="mt-6 w-[4rem] h-[1.4rem] font-normal  text-[0.5rem] sm:w-[8rem] sm:h-[2.6rem] sm:py-2 sm:text-[1.2rem] border border-[#F5D5A2] text-white hover:bg-white hover:text-black transition-all duration-300">
+          <button className="mt-6 w-[8rem] h-[2.6rem] font-normal  text-[1rem] sm:w-[8rem] sm:h-[2.6rem] sm:py-2 sm:text-[1.2rem] border border-[#F5D5A2] text-white hover:bg-white hover:text-black transition-all duration-300">
             Read More
           </button>
         </div>

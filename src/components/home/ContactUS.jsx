@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="text-white px-[1.5rem] md:px-[5rem] py-[5rem] xl:px-[5rem] xl:py-[5rem]">
+    <section className="text-white px-[1.5rem] md:px-[5rem] py-[2rem] xl:px-[5rem] xl:py-[5rem]">
       {/* Header */}
       <div className="flex items-center gap-[1rem] mb-[2.5rem] md:gap-[2rem] md:mb-[4rem] xl:gap-[2rem] xl:mb-[4rem]">
         <h2 className="text-[2.5rem] font-semibold leading-none md:text-[4rem] lg:text-[5rem] xl:text-[6rem]">

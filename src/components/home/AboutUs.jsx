@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <div className="relative text-white overflow-hidden mb-20">
+    <div className="relative text-white overflow-hidden ">
       {/* Background Strip using clip-path */}
-      <div className="absolute h-[12rem] lg:h-[19rem] top-[5rem] left-0 w-full xl:h-[43.875rem] xl:top-[5rem] z-0">
+      <div className="absolute h-[12rem] lg:h-[19rem] top-[7rem] left-0 w-full xl:h-[43.875rem] xl:top-[5rem] z-0">
         <div
           className="w-full h-full bg-[#011925]"
           style={{

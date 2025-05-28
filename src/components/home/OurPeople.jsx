@@ -2,7 +2,7 @@ import React from "react";
 
 const OurPeople = () => {
   return (
-    <div className="relative bg-[#050D11] sm:min-h-[50rem] sm:h-[31.25rem] lg:h-[37.5rem] xl:h-[50rem]
+    <div className="relative  sm:min-h-[50rem] sm:h-[31.25rem] lg:h-[37.5rem] xl:h-[50rem]
      text-white overflow-hidden  ">
       {/* Background Strip using clip-path - Mobile height increased */}
       <div className="absolute top-0 left-0 w-full h-[40.625rem] sm:h-[25.125rem] lg:h-[31.375rem] xl:h-[43.875rem] z-0">
