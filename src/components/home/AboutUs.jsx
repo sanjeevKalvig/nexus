@@ -8,7 +8,7 @@ const AboutUs = () => {
         <div
           className="w-full h-full bg-[#011925]"
           style={{
-            clipPath: "polygon(0% 30%, 0% 75%, 99% 70%, 100% 0%)",
+            clipPath: "polygon(0% 30%, 0% 82%, 99% 70%, 100% 0%)",
           }}
         ></div>
       </div>
@@ -20,11 +20,11 @@ const AboutUs = () => {
           <div className="text-white py-20 px-6 md:px-12 lg:px-24 xl:px-24 xl:py-20">
             {/* Header */}
             <div className="mb-16">
-              <h2 className=" text-[40px] font-semibold leading-none xl:text-[96px]">
+              <h2 className=" text-[40px] font-semibold leading-none xl:text-[90px] ">
                 <span className="text-[#F4D48D]">ABOUT</span>{" "}
                 <span className="text-white">US</span>
               </h2>
-              <p className="text-[24px] text-gray-300 mt-8 max-w-4xl xl:max-w-4xl">
+              <p className="text-[22px] text-gray-300 mt-8 max-w-4xl  xl:text-[22px]">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -33,7 +33,7 @@ const AboutUs = () => {
             </div>
 
             {/* Mission & Vision */}
-            <div className="grid md:grid-cols-2 gap-16 xl:gap-16 xl:mb-20">
+            <div className="grid md:grid-cols-2 gap-16 xl:gap-16  ">
               <div>
                 <div>
                   <img src="/assets/mission.svg" />
@@ -41,7 +41,7 @@ const AboutUs = () => {
                 <h3 className="text-[32px] text-[#F4D48D] font-semibold mb-4">
                   Mission
                 </h3>
-                <p className="text-[20px] text-gray-300 leading-relaxed">
+                <p className="text-[20px] text-gray-300 leading-relaxed xl:text-[15px]  ">
                   Nexus Group provides energy infrastructure solutions for
                   electric power delivery and pipeline installation. We also
                   work on infrastructure design as well as shoreline sites.
@@ -54,7 +54,7 @@ const AboutUs = () => {
                 <h3 className="text-[32px] text-[#F4D48D] font-semibold mb-4">
                   Vision
                 </h3>
-                <p className="text-[20px] text-gray-300 leading-relaxed">
+                <p className="text-[20px] text-gray-300 leading-relaxed xl:text-[15px]">
                   To build a global enterprise for all our stakeholders'
                   priorities and for the public, Nexus Group wants to create a
                   great future for our country by empowering a million young
@@ -69,10 +69,10 @@ const AboutUs = () => {
         <div className="relative flex-1 flex flex-col justify-between max-w-[700px] lg:max-w-[850px] xl:max-w-[850px]">
           {/* Background div behind the image */}
           <div
-            className="absolute bg-[#011925] inset-0 w-full h-auto -mt-8 z-0 xl:hidden "
+            className="absolute bg-[#011925] inset-0 w-full h-auto -mt-8 z-0 xl:hidden md:hidden  "
             style={{
               height: "109%", 
-              clipPath: "polygon(0% 12%, 0% 84%, 100% 99%, 100% 4%)",
+              clipPath: "polygon(0% 12%, 0% 80%, 100% 99%, 100% 4%)",
             }}
           ></div>
 
@@ -82,24 +82,24 @@ const AboutUs = () => {
             alt="Building"
             className="w-full h-auto object-cover rounded-md relative z-10"
             style={{
-              clipPath: "polygon(0% 9%, 0% 85%, 100% 100%, 100% 1%)",
+              clipPath: "polygon(0% 10%, 0% 79%, 100% 100%, 100% 1%)",
             }}
           />
         </div>
       </div>
 
       {/* Our Values - Overlapping half of the content container */}
-      <div className="relative z-20 mt-4 xl:-mt-[600px] px-6 md:px-12 lg:px-24 xl:px-24 max-w-[1920px] mx-auto">
+      <div className="relative z-20 mt-4 xl:-mt-[27rem] px-6 md:px-12 lg:px-24 xl:px-24 max-w-[1920px] mx-auto">
         <div className="rounded-lg shadow-xl">
-          <div className="flex items-center mb-12">
-            <h2 className="text-[40px] font-semibold leading-none xl:text-[96px]">
+          <div className="flex items-center mb-12 h-auto">
+            <h2 className="text-[40px] font-semibold leading-none xl:text-[90px]">
               <span className="text-[#F4D48D]">OUR </span>
               <span className="text-white">VALUES</span>
             </h2>
             <img
               src="/assets/value.png"
               alt="Values Icon"
-              className=" w-[49px] h-[49px] object-contain ml-6  xl:w-[160px] xl:h-[200px] "
+              className=" w-[49px] h-[49px]  object-contain ml-6  xl:w-[120px] xl:h-[200px] "
             />
           </div>
 
