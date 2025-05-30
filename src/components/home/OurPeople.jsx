@@ -84,7 +84,7 @@ const OurPeople = () => {
           </div>
 
           {/* Arrow Controls */}
-          <div className="flex border gap-6 mt-[2.3rem] sm:gap-10 lg:gap-8 xl:gap-8 xlplus:mt-[7rem] self-end p-[0.15rem] sm:p-4 lg:p-6 xl:p-[0.4rem] sm:mt-[1.875rem] lg:mt-[2.5rem] xl:mt-[5rem]">
+          <div className="flex  gap-6 mt-[2.3rem] sm:gap-10 lg:gap-8 xl:gap-8 xlplus:mt-[7rem] self-end p-[0.15rem] sm:p-4 lg:p-6 xl:p-[0.4rem] sm:mt-[1.875rem] lg:mt-[2.5rem] xl:mt-[5rem]">
             {/* Left Arrow */}
             <div className="w-[1.25rem] h-[1.25rem] sm:w-[2rem] sm:h-[2rem] lg:w-[2.25rem] lg:h-[2.25rem] xl:w-[2.5rem] xl:h-[2.5rem] border-y-[10px] sm:border-y-[2rem] lg:border-y-[2.25rem] xl:border-y-[2.5rem] border-y-transparent border-r-[0.75rem] sm:border-r-[2.5rem] lg:border-r-[2.8125rem] xl:border-r-[3rem] border-r-[#D1D5DB]" />
 
