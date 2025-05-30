@@ -2,7 +2,7 @@ import "./App.css";
 import AboutUs from "./components/home/AboutUs";
 import ContactUs from "./components/home/ContactUS";
 import Footer from "./components/home/Footer";
-import HeroSection from "./components/home/heroSection";
+import HeroSection from "./components/home/HeroSection";
 import OurPeople from "./components/home/Ourpeople";
 import OurServices from "./components/home/OurServices";
 
