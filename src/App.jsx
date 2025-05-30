@@ -3,7 +3,7 @@ import AboutUs from "./components/home/AboutUs";
 import ContactUs from "./components/home/ContactUS";
 import Footer from "./components/home/Footer";
 import HeroSection from "./components/home/HeroSection";
-import OurPeople from "./components/home/OurPeople";
+import OurPeople from "./components/home/OurPeople.jsx";
 import OurServices from "./components/home/OurServices";
 
 export default function App() {
