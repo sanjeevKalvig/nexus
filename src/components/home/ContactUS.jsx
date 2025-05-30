@@ -2,7 +2,7 @@ import React from "react";
 
 const ContactUs = () => {
   return (
-    <section className="text-white px-[1.5rem] md:px-[5rem] py-[2rem] xl:px-[5rem] xl:py-[5rem]">
+    <section className="text-white px-[1.5rem] md:px-[5rem] py-[2rem] lgplus:py-0 lgplus:mb-5 xl:px-[5rem] xl:py-[5rem] xlplus:py-0 xlplus:mb-8">
       {/* Header */}
       <div className="flex items-center gap-[1rem] mb-[2.5rem] md:gap-[2rem] md:mb-[4rem] xl:gap-[2rem] xl:mb-[4rem]">
         <h2 className="text-[2.5rem] font-semibold leading-none md:text-[4rem] lg:text-[5rem] xl:text-[6rem]">
@@ -29,7 +29,7 @@ const ContactUs = () => {
             <input
               type="email"
               placeholder="Email*"
-              className="w-full bg-transparent border-b xl:mt-[20%] border-[#a3a3a3] text-white placeholder:text-[#a3a3a3] text-[1.125rem] focus:outline-none py-[0.5rem]"
+              className="w-full bg-transparent border-b lgplus:mt-[20%] xl:mt-[20%] border-[#a3a3a3] text-white placeholder:text-[#a3a3a3] text-[1.125rem] focus:outline-none py-[0.5rem]"
             />
           </div>
 
@@ -43,7 +43,7 @@ const ContactUs = () => {
             <input
               type="text"
               placeholder="Company Name*"
-              className="w-full bg-transparent border-b xl:mt-[20%] border-[#a3a3a3] text-white placeholder:text-[#a3a3a3] text-[1.125rem] focus:outline-none py-[0.5rem]"
+              className="w-full bg-transparent border-b lgplus:mt-[20%] xl:mt-[20%] border-[#a3a3a3] text-white placeholder:text-[#a3a3a3] text-[1.125rem] focus:outline-none py-[0.5rem]"
             />
           </div>
 

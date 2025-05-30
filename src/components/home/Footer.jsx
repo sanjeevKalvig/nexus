@@ -8,9 +8,9 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="relative bg-black text-white px-5 py-5 xl:px-16 xl:py-20 overflow-hidden">
+    <footer className="relative bg-black  text-white px-5 py-5 xl:px-16 xl:py-20 overflow-hidden">
       {/* Top Section */}
-      <div className="flex  xl:flex-row justify-between items-start xl:items-start xl:relative xl:px-[8rem]  xl:gap-0">
+      <div className="flex  xl:flex-row justify-between items-start lgplus:px-[9rem] lgplus:pl-[15rem]  xl:items-start xl:relative xl:px-[8rem]  xl:gap-0">
         {/* Column 1: Logo + LinkedIn */}
         <div className="flex flex-col gap-2 xl:mt-5 w-full xl:w-auto">
           {/* Logo */}
@@ -75,9 +75,9 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-       <div className="bg-gray-300 opacity-20 w-full h-[2px] mt-3" ></div>
+       <div className="bg-gray-300 opacity-20 w-full h-[2px] mt-7" ></div>
       {/* Bottom Section - Copyright */}
-      <div className="w-full text-[10px] xl:text-[16px] text-center mt-4 xl:mt-0 xl:-translate-x-12 xl:translate-y-7">
+      <div className="w-full text-[10px] xl:text-[16px] text-center mt-4  xl:mt-0 lgplus:-translate-x-10  xl:-translate-x-12 xl:translate-y-7">
         © 2022 Nexus Group. Site by KALVIG
       </div>
     </footer>

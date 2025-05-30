@@ -7,7 +7,7 @@ const HeroSection = () => {
       <img
         src="/assets/hero.png"
         alt="Industrial Background"
-        className="absolute inset-0 w-[120%] h-full object-cover opacity-40 2xl:scale-[1.2] 2xlplus:scale-[1.2] 2xl:translate-x-[10%] 2xlplus:translate-x-[6%] "
+        className="absolute inset-0 w-[120%] h-full object-cover opacity-40 2xl:scale-[1.2] xlplus:scale-[1.2] xl:translate-x-[10%]  2xlplus:scale-[1.2] 2xl:translate-x-[10%] 2xlplus:translate-x-[6%] "
       />
 
       {/* Logo Section */}
@@ -37,7 +37,8 @@ const HeroSection = () => {
             type specimen book.
           </p>
 
-          <button className="mt-6 w-[8rem] h-[2.6rem] font-normal  text-[1rem] sm:w-[8rem] sm:h-[2.6rem] sm:py-2 sm:text-[1.2rem] border border-[#F5D5A2] text-white hover:bg-white hover:text-black transition-all duration-300">
+          <button className="mt-6 w-[8rem] h-[2.6rem] font-normal  text-[1rem] sm:w-[8rem] sm:h-[2.6rem] sm:py-2 sm:text-[1.2rem] border
+           border-[#F5D5A2] text-white hover:bg-white hover:text-black transition-all duration-300">
             Read More
           </button>
         </div>

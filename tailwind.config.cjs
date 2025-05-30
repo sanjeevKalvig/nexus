@@ -9,8 +9,10 @@ module.exports = {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
       },
-       screens: {
-        '2xlplus': '1630px', // custom breakpoint
+      screens: {
+        'lgplus': '1200px',
+        '2xlplus': '1630px', // custom breakpoint,
+        'xlplus': '1300px',
       },
       colors: {
         gold1: '#CDAB65',
