@@ -8,9 +8,10 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="relative bg-black  text-white px-5 py-5 xl:px-16 xl:py-20 overflow-hidden">
+    <footer className="relative  bg-black  text-white px-5 py-5 xl:px-16 xl:py-20 overflow-hidden">
       {/* Top Section */}
-      <div className="flex  xl:flex-row justify-between items-start lgplus:px-[9rem] lgplus:pl-[15rem]  xl:items-start xl:relative xl:px-[8rem]  xl:gap-0">
+      <div className="flex  sm:mb-20 lgplus:mb-8 2xl:mb-20 xl:flex-row justify-between items-start lgplus:px-[9rem] lgplus:pl-[15rem] 
+       xl:items-start xl:relative xl:px-[8rem]  xl:gap-0">
         {/* Column 1: Logo + LinkedIn */}
         <div className="flex flex-col gap-2 xl:mt-5 w-full xl:w-auto">
           {/* Logo */}
