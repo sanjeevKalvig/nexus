@@ -21,7 +21,7 @@ const AboutUs = () => {
           <div className="text-white py-20 px-6 md:px-12 lg:px-24 xl:px-24 xl:py-20">
             {/* Header */}
             <div className="mb-16">
-              <h2 className=" text-[2.5rem] font-semibold leading-none lgplus:text-[4rem] xlplus:text-[5rem] 2xl:text-[5.625rem] 2xlplus:text-[8rem] "> 
+              <h2 className=" text-[2.5rem] font-semibold leading-none lgplus:text-[4rem] xlplus:text-[5rem] 2xl:text-[4rem] 2xlplus:text-[8rem] "> 
                 <span className="text-[#F4D48D]">ABOUT</span>{" "}
                 <span className="text-white">US</span>
               </h2>
@@ -94,7 +94,7 @@ const AboutUs = () => {
        lgplus:mt-[6rem] xlplus:-mt-[20rem] 2xlplus:-mt-[20rem]"> {/* 432px → 27rem */}
         <div className="rounded-lg shadow-xl">
           <div className="flex items-center mb-12 h-auto">
-            <h2 className="text-[2.5rem] font-semibold leading-none 2xl:text-[5.625rem] lgplus:text-[4rem] 2xlplus:text-[8rem]"> {/* 40px, 90px */}
+            <h2 className="text-[2.5rem] font-semibold leading-none 2xl:text-[4rem] lgplus:text-[4rem] 2xlplus:text-[8rem]"> {/* 40px, 90px */}
               <span className="text-[#F4D48D]">OUR </span>
               <span className="text-white">VALUES</span>
             </h2>
