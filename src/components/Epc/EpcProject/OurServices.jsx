@@ -4,32 +4,27 @@ const SERVICES = [
   {
     title: "Pipelines",
     icon: "/assets/epc/pipelines.svg",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
   },
   {
     title: "Roads",
     icon: "/assets/epc/roads.svg",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
   },
   {
     title: "Bridges",
     icon: "/assets/epc/bridges.svg",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
   },
   {
     title: "Factories",
     icon: "/assets/epc/factories.svg",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
   },
   {
     title: "Project Management",
     icon: "/assets/epc/pipelines.svg",
-    desc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
+    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus sollicitudin pellentesque et non erat. Maecenas nibh dolor.",
   },
 ];
 
@@ -63,8 +58,9 @@ const OurServices = () => {
       {/* Content area */}
       <div className="mx-auto max-w-[1300px] px- pt-12 pb-24">
         <p className="mx-auto mb-10 max-w-[860px] text-center text-[18px] leading-7 text-[#B8C2CC]">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim eget erat risus
-          sollicitudin pellentesque et non erat. Maecenas nibh dolor.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          dignissim eget erat risus sollicitudin pellentesque et non erat.
+          Maecenas nibh dolor.
         </p>
 
         {/* First row: 3 cards (lg) */}
@@ -87,8 +83,28 @@ const OurServices = () => {
 
 const ServiceCard = ({ title, icon, desc }) => {
   return (
-    <div className="flex min-h-[240px] flex-col gap-4 rounded-xl bg-[#041C28] p-7">
-      {/* 120px icon */}
+    <div className="relative flex min-h-[240px] flex-col gap-4 bg-[#011925] p-7 pb-24">
+      {/* Top gradient border + glow */}
+      <span
+        aria-hidden
+        className="pointer-events-none absolute left-0 right-0 top-0 h-[1px] z-10 bg-[linear-gradient(to_right,#012337,#022A42,#024B78,#00385A)]"
+      />
+      <span
+        aria-hidden
+        className="pointer-events-none absolute left-0 right-0 top-0 h-[1px] z-10 bg-[linear-gradient(to_right,#012337,#022A42,#024B78,#00385A)] blur-md opacity-70"
+      />
+
+      {/* Right gradient border + glow */}
+      <span
+        aria-hidden
+        className="pointer-events-none absolute top-0 bottom-0 right-0 w-[1px] z-10 bg-[linear-gradient(to_bottom,#012337,#022A42,#024B78,#00385A)]"
+      />
+      <span
+        aria-hidden
+        className="pointer-events-none absolute top-0 bottom-0 right-0 w-[1px] z-10 bg-[linear-gradient(to_bottom,#012337,#022A42,#024B78,#00385A)] blur-md opacity-70"
+      />
+
+      
       <div className="flex h-[60px] w-[60px] items-center justify-center">
         <img
           src={icon}
@@ -99,10 +115,10 @@ const ServiceCard = ({ title, icon, desc }) => {
       </div>
 
       {/* Title */}
-      <h3 className="m-0 text-[24px] leading-snug font-bold text-[#F4D48D]">{title}</h3>
+      <h3 className="m-0 text-[20px] leading-snug font-bold ">{title}</h3>
 
       {/* Description */}
-      <p className="m-0 text-[20px] leading-7 text-[#C9D6DE]">{desc}</p>
+      <p className="m-0 text-[16px] leading-7 text-[#C9D6DE]">{desc}</p>
     </div>
   );
 };
