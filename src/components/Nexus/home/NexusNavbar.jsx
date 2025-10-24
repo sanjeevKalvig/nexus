@@ -9,13 +9,13 @@ const NexusNavbar = () => {
 
   const menuItems = [
     { name: "Home", path: "/" },
-    // { name: "Company", path: "/company" },
-    // { name: "Project", path: "/project" },
-    // { name: "Investor", path: "/investor" },
-    // { name: "Clients", path: "/clients" },
+    { name: "Nexus EPC", path: "/epc" },
+    { name: "Nexus Akasa", path: "/akasa" },
     { name: "Nexus EPC Services", path: "/epc_ourservices" },
     { name: "Nexus EPC Client", path: "/epc_client" },
     { name: "Nexus Company Profile", path: "/epc_companyprofile" },
+    { name: "Nexus Investors", path: "/epcreport" },
+    { name: "Nexus Akasa Project", path: "/akasaproject" },
     { name: "Contact Us", path: "/contactus" },
   ];
 

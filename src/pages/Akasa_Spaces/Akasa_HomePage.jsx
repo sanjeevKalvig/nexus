@@ -1,8 +1,15 @@
 import React from 'react'
+import Footer from '../../components/Nexus_EPC/home/Footer'
+import NexusNavbar from '../../components/Nexus/home/NexusNavbar'
+import HeroSection from '../../components/Nexus/home/HeroSection'
 
 function Akasa_HomePage() {
   return (
-    <div>Akasa_HomePage</div>
+    <>
+    <NexusNavbar />
+    <HeroSection />
+    <Footer />
+    </>
   )
 }
 

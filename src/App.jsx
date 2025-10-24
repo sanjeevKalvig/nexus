@@ -6,6 +6,7 @@ import EPC_ClientPage from "./pages/Nexus_EPC/EPC_ClientPage";
 import ContactUs from "./pages/Nexus/ContactUs";
 import EPC_CompanyProfile from "./pages/Nexus_EPC/EPC_CompanyProfile";
 import EPC_ReportPage from "./pages/Nexus_EPC/EPC_ReportPage";
+import Akasa_HomePage from "./pages/Akasa_Spaces/Akasa_HomePage";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Route path="/epc_companyprofile" element={<EPC_CompanyProfile />} />
       <Route path="/contactus" element={<ContactUs />} />
       <Route path="/epcreport" element={<EPC_ReportPage />} />
+      <Route path="/akasa" element={<Akasa_HomePage />} />
     </Routes>
   );
 }
