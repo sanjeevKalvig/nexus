@@ -65,7 +65,7 @@ const OurPeople = () => {
               />
               <div className="text-left   ">
                 <h3 className="text-[1.125rem] sm:text-[1.75rem] lg:text-[2rem] xl:text-[3rem] xlplus:text-[2.8rem] font-bold">
-                  David Jones
+                  Sanjeev Kumar
                 </h3>
                 <p className="text-[0.625rem] sm:text-[1.125rem] lg:text-[1.25rem] xl:text-[2rem] text-[#9CA3AF]">
                   Lorem Ipsum
