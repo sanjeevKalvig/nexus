@@ -4,20 +4,18 @@
 @tailwind utilities;
 
 
-@layer base {
-  html {
-    font-family: 'Poppins', sans-serif;
-    background-color: #050D11;
-    color: white;
-  }
+
+
+@font-face {
+  font-family: 'Ethnocentric';
+  /* This is the name you'll use in Tailwind config */
+  src: url('fonts/ethnocentric.woff') format('woff');
+  /* Path relative to public/ */
+  font-weight: 700;
+  /* Or whatever weight your specific file represents (e.g., normal, bold) */
+  font-style: normal;
+  font-display: swap;
+  /* Best practice for performance */
 }
 
-.clip-bg {
-  clip-path: polygon(0% 10%, 0% 90%, 100% 80%, 100% 0%);
-}
 
-@media (min-width: 640px) {
-  .clip-bg {
-    clip-path: polygon(0% 30%, 0% 85%, 99% 70%, 100% 0%);
-  }
-}

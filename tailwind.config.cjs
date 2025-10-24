@@ -7,7 +7,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif'],
+        ethnocentric: ['Ethnocentric', 'sans-serif'],
       },
       screens: {
         'lgplus': '1200px',

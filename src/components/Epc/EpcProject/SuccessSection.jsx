@@ -50,7 +50,7 @@ export default function SuccessSection() {
               alt="Buildings icon"
               className="h-10 w-10 md:h-12 md:w-12"
             />
-            <p className="text-4xl md:text-5xl font-bold ">
+            <p className="text-4xl md:text-5xl font-bold text-white">
               1738
             </p>
             <span className="text-sm md:text-base text-[#C9D6DE]">Buildings</span>
@@ -63,7 +63,7 @@ export default function SuccessSection() {
               alt="Customers icon"
               className="h-10 w-10 md:h-12 md:w-12"
             />
-            <div className="text-4xl md:text-5xl font-bold">
+            <div className="text-4xl md:text-5xl font-bold text-white">
               320
             </div>
             <span className="text-sm md:text-base text-[#C9D6DE]">Customers</span>
@@ -76,7 +76,7 @@ export default function SuccessSection() {
               alt="Architects icon"
               className="h-10 w-10 md:h-12 md:w-12"
             />
-            <div className="text-4xl md:text-5xl font-bold">
+            <div className="text-4xl md:text-5xl font-bold text-white">
               60
             </div>
             <span className="text-sm md:text-base text-[#C9D6DE]">Architects</span>
@@ -89,7 +89,7 @@ export default function SuccessSection() {
               alt="Countries icon"
               className="h-10 w-10 md:h-12 md:w-12"
             />
-            <div className="text-4xl md:text-5xl font-bold">
+            <div className="text-4xl md:text-5xl font-bold text-white ">
               7
             </div>
             <span className="text-sm md:text-base text-[#C9D6DE]">Countries</span>
