@@ -6,7 +6,7 @@ const OurServices = () => {
       {/* Heading - Reduced from 2.5rem/6rem/7rem to 1.875rem/4.5rem/5.25rem */}
       <h2 className="text-[1.875rem] sm:text-[4.5rem] font-semibold text-center mb-12 sm:mb-20 2xlplus:text-[5.25rem]">
         <span className="text-white">OUR </span>
-        <span className="text-[#F4D48D]">SERVICES</span>
+        <span className="text-[#F4D48D]">VERTICALS</span>
       </h2>
 
       {/* Cards Grid */}

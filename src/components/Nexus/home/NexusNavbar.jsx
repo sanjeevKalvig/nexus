@@ -15,6 +15,7 @@ const NexusNavbar = () => {
     // { name: "Clients", path: "/clients" },
     { name: "Nexus EPC Services", path: "/epc_ourservices" },
     { name: "Nexus EPC Client", path: "/epc_client" },
+    { name: "Nexus Company Profile", path: "/epc_companyprofile" },
     { name: "Contact Us", path: "/contactus" },
   ];
 
