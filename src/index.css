@@ -7,9 +7,9 @@
 
 
 @font-face {
-  font-family: 'Ethnocentric';
+  font-family: 'Noir';
   /* This is the name you'll use in Tailwind config */
-  src: url('fonts/ethnocentric.woff') format('woff');
+  src: url('fonts/noir.woff2') format('woff2');
   /* Path relative to public/ */
   font-weight: 700;
   /* Or whatever weight your specific file represents (e.g., normal, bold) */

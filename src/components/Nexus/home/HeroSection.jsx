@@ -34,16 +34,7 @@ const HeroSection = () => {
         className="absolute inset-0 w-[120%] h-full object-cover opacity-40 2xl:scale-[1.2] xlplus:scale-[1.2] xl:translate-x-[10%] 2xlplus:scale-[1.2] 2xl:translate-x-[10%] 2xlplus:translate-x-[6%]"
       />
 
-      {/* Logo Section */}
-      <div className="absolute top-[3.3rem] left-[2.6rem] w-[3rem] h-[3.5rem] sm:top-[4.3rem] sm:left-[5.2rem] sm:w-[4.3rem] sm:h-[5.2rem]">
-        <div className="flex items-center">
-          <img
-            src="/assets/nexuslogo.png"
-            alt="Company Logo"
-            className="h-full w-full object-contain"
-          />
-        </div>
-      </div>
+      
 
       {/* Hero Content */}
       <div className="relative z-10 h-full flex items-center top-[2rem] left-[2rem] sm:top-[4rem] sm:left-[5rem]">

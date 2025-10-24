@@ -66,9 +66,9 @@ export default function ClientSpeakSection({ testimonials = TESTIMONIALS }) {
         {/* Big outline background text (Kept offset for effect, as per original visual) */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 flex items-center justify-center pointer-events-none uppercase font-extrabold text-transparent select-none"
+          className="absolute inset-0 flex items-center justify-center pointer-events-none uppercase font-extrabold text-transparent select-none font-noir"
           style={{
-            fontSize: "120px", // Increased size for impact
+            fontSize: "100px", // Increased size for impact
             lineHeight: 1,
             whiteSpace: "nowrap",
 
@@ -80,7 +80,7 @@ export default function ClientSpeakSection({ testimonials = TESTIMONIALS }) {
 
         {/* Foreground title - Centered */}
         <div className="relative z-10 flex items-center justify-center">
-          <h2 className="m-0 text-5xl md:text-6xl leading-tight font-extrabold uppercase text-[#F4D48D] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] translate-y-8">
+          <h2 className="m-0 text-5xl md:text-6xl leading-tight font-bold uppercase text-[#F4D48D] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] translate-y-8 font-noir ">
             CLIENT SPEAK
           </h2>
         </div>
