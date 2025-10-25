@@ -21,6 +21,8 @@ export default function App() {
       <Route path="/contactus" element={<ContactUs />} />
       <Route path="/epcreport" element={<EPC_ReportPage />} />
       <Route path="/akasa" element={<Akasa_HomePage />} />
+      <Route path="/akasaproject" element={<Akasa_Project />} />
+      <Route path="/akasacompany" element={<Akasa_CompanyProfile />} />
     </Routes>
   );
 }

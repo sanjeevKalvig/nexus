@@ -1,26 +1,32 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
-const NexusNavbar = () => {
+const Epc_Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
 
   const menuItems = [
-    { name: "Home", path: "/" },
+    { name: "Home", path: "/epc" },
+    { name: "Project", path: "/epc_ourservices" },
+    { name: "Profile", path: "/epc_companyprofile" },
+    { name: "client", path: "/epc_client" },
+    { name: "invester", path: "/epcreport" },
+    { name: "NexusHome", path: "/" },
 
-    { name: "Contact Us", path: "/contactus" },
-    { name: "Nexus EPC", path: "/epc" },
-    { name: "Nexus Akasa", path: "/akasa" },
   ];
 
   return (
     <>
       <nav className="fixed top-0 left-0 right-0 h-[70px] bg-transparent flex items-center justify-between px-8 z-[1000] ">
         <div className="flex items-center">
-          <Link to="/">
-            <img src="/assets/nexuslogo.png" alt="Nexus Logo" className="h-16 w-auto mt-6" />
+          <Link to="/epc">
+            <img
+              src="/assets/NexusEPC_logo.png"
+              alt="Nexus Logo"
+              className="h-16 w-auto mt-5"
+            />
           </Link>
         </div>
 
@@ -30,42 +36,48 @@ const NexusNavbar = () => {
           aria-label="Toggle menu"
         >
           <span
-            className={`w-full h-[2px] bg-[#c9a961] transition-all duration-300 ${isOpen ? "rotate-45 translate-y-[11px]" : ""
-              }`}
+            className={`w-full h-[2px] bg-[#c9a961] transition-all duration-300 ${
+              isOpen ? "rotate-45 translate-y-[11px]" : ""
+            }`}
           />
           <span
-            className={`w-full h-[2px] bg-[#c9a961] transition-all duration-300 ${isOpen ? "opacity-0" : ""
-              }`}
+            className={`w-full h-[2px] bg-[#c9a961] transition-all duration-300 ${
+              isOpen ? "opacity-0" : ""
+            }`}
           />
           <span
-            className={`w-full h-[2px] bg-[#c9a961] transition-all duration-300 ${isOpen ? "-rotate-45 -translate-y-[11px]" : ""
-              }`}
+            className={`w-full h-[2px] bg-[#c9a961] transition-all duration-300 ${
+              isOpen ? "-rotate-45 -translate-y-[11px]" : ""
+            }`}
           />
         </button>
       </nav>
 
       {/* Overlay */}
       <div
-        className={`fixed inset-0 bg-black/70 transition-all duration-300 z-[998] ${isOpen ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
+        className={`fixed inset-0 bg-black/70 transition-all duration-300 z-[998] ${
+          isOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
         onClick={closeMenu}
       />
 
       {/* Fullscreen Menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-screen bg-[#0a0e1a] transition-transform duration-500 z-[999] flex flex-col items-center justify-center ${isOpen ? "translate-x-0" : "-translate-x-full"
-          }`}
+        className={`fixed top-0 left-0 w-full h-screen bg-[#0a0e1a] transition-transform duration-500 z-[999] flex flex-col items-center justify-center ${
+          isOpen ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
-        <ul className="flex flex-col items-center justify-center gap-2 text-center">
+        <ul className="flex flex-col items-center justify-center gap-2 text-center uppercase">
           {menuItems.map((item, index) => (
             <li key={index}>
               <NavLink
                 to={item.path}
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  `text-[24px] tracking-wide transition-all duration-300 ${isActive
-                    ? "text-[#c9a961] font-semibold"
-                    : "text-white/95 hover:text-[#c9a961]"
+                  `text-[24px] tracking-wide transition-all duration-300 ${
+                    isActive
+                      ? "text-[#c9a961] font-semibold"
+                      : "text-white/95 hover:text-[#c9a961]"
                   }`
                 }
                 end
@@ -96,4 +108,4 @@ const NexusNavbar = () => {
   );
 };
 
-export default NexusNavbar;
+export default Epc_Navbar;

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Footer from "../../components/Nexus/home/Footer";
-import NexusNavbar from "../../components/Nexus/home/NexusNavbar";
+import Epc_Navbar from "./Epc_Navbar";
+
 
 const EPC_CompanyProfile = () => {
   // Toggle navigation
@@ -12,7 +13,7 @@ const EPC_CompanyProfile = () => {
   return (
     <div className=" text-white min-h-screen overflow-hidden">
       {/* Navbar */}
-      <NexusNavbar />
+     <Epc_Navbar />
 
       {/* 1. Company Section */}
       <section className="relative py-20 pl-20 sm:pl-32">
