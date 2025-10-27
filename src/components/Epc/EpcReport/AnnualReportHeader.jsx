@@ -2,25 +2,49 @@ import React from "react";
 
 // Reusable Metric Block Component
 const MetricBlock = ({ value, label, description, isMoney = false }) => (
-  <div className="flex justify-between items-center bg-[#012337] p-6 rounded-lg shadow-md">
+  <div className="
+      flex flex-col sm:flex-row 
+      justify-between items-start sm:items-center 
+      bg-[#012337] 
+      p-4 sm:p-6 lg:p-8 
+      rounded-lg shadow-md 
+      gap-4
+    ">
+    
     {/* Value & Label */}
-    <div className="flex-shrink-0 w-[30%]">
-      <div className="text-5xl font-light text-white">
-        {isMoney && <span className="text-5xl align-top">$</span>}
-        {value}
+    <div className="w-full sm:w-1/3">
+      <div className="flex items-baseline">
+        {isMoney && (
+          <span className="text-3xl sm:text-4xl lg:text-5xl font-light text-white align-top">
+            $
+          </span>
+        )}
+        <span className="ml-1 text-4xl sm:text-5xl lg:text-6xl font-light text-white">
+          {value}
+        </span>
       </div>
-      <div className="text-lg font-medium text-gray-400 uppercase tracking-wider mt-2 max-w-5">
+      <div className="mt-1 sm:mt-2 text-sm sm:text-base lg:text-lg font-medium text-gray-400 uppercase tracking-wide">
         {label}
       </div>
     </div>
 
     {/* Icon & Description */}
-    <div className=" w-[60%] flex items-center gap-4 p-2 rounded-lg bg-[#00385A]">
-      <div>
-        <img src="/assets/epc/buildings.svg" alt="img" />
+    <div className="
+        w-full sm:w-2/3 
+        flex items-center 
+        gap-2 sm:gap-4 
+        p-2 sm:p-4 
+        bg-[#00385A] 
+        rounded-lg
+      ">
+      <div className="flex-shrink-0">
+        <img
+          className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
+          src="/assets/epc/buildings.svg"
+          alt="icon"
+        />
       </div>
-
-      <div className="text-sm font-semibold text-gray-300 uppercase tracking-wider max-w-[60%]">
+      <div className="text-xs sm:text-sm lg:text-base font-semibold text-gray-300 uppercase tracking-wide">
         {description}
       </div>
     </div>
@@ -32,34 +56,45 @@ const AnnualReportHeader = () => {
   return (
     <>
       {/* Header band */}
-      <div className="relative mx-auto  pl-28 pt-12 pb-24 font-noir">
+      <div className="relative mt-10 py-12 text-center overflow-hidden">
         {/* Big outline background text */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 flex items-center pl-24 pointer-events-none uppercase font-extrabold text-transparent select-none"
+          className="
+      absolute inset-0 
+      flex justify-center items-center 
+      pointer-events-none select-none uppercase font-extrabold text-transparent
+      leading-none
+      text-[2.5rem] sm:text-[6rem] md:text-[8rem] lg:text-[8rem]
+    "
           style={{
-            fontSize: "100px",
-            lineHeight: 1,
-            whiteSpace: "nowrap",
-            WebkitTextStroke: "1px rgba(255,255,255,0.06)", // outline not possible via Tailwind, minimal compromise required!
+            WebkitTextStroke: "1px rgba(255,255,255,0.06)", // still inline since Tailwind doesn’t support text-stroke
           }}
         >
           ANNUAL REPORT
         </div>
 
         {/* Foreground title */}
-        <div className="relative z-10 mx-auto flex h-full  items-center px-6 translate-y-12">
-          <h2 className="m-0 text-[40px] leading-tight font-extrabold uppercase text-[#F4D48D] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]">
+        <div className="relative z-10 px-4 sm:px-6 lg:px-8 translate-y-3 sm:translate-y-7">
+          <h2
+            className="
+        mx-auto inline-block
+        text-2xl sm:text-4xl md:text-5xl lg:text-[60px]
+        leading-tight font-bold uppercase
+        text-[#F4D48D]
+        drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)]
+      "
+          >
             ANNUAL REPORT
           </h2>
         </div>
       </div>
+
       <div className={` min-h-screen text-white p-8 md:p-16 lg:p-20 font-sans`}>
         {/* Container for the two-column layout */}
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-12 lg:gap-16 max-w-7xl mx-auto">
           {/* === LEFT COLUMN: Headline and Text === */}
           <div className="space-y-8 lg:pr-8">
-            
             {/* Main Headline */}
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-light text-amber-500 leading-tight">
               GROWTH THROUGH

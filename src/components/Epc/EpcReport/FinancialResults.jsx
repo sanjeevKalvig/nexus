@@ -92,21 +92,21 @@ const fiscalYearsNav = ['2023', '2022', '2021', '2020'];
 // Reusable component for a single report card.
 const ReportCard = ({ report }) => {
     return (
-    <div className="bg-[#012337] rounded-xl shadow-xl p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 transform">
-            <p className="text-sm text-gray-400 mb-2 font-medium">{report.date}</p>
-            <h3 className="text-lg font-semibold text-white mb-3 leading-snug">{report.title}</h3>
-            <p className="text-gray-300 mb-6 text-sm leading-relaxed">{report.description}</p>
+        <div className="bg-[#012337] rounded-xl shadow-xl p-4 sm:p-6 transition-all duration-300 hover:shadow-2xl hover:-translate-y-2 transform">
+            <p className="text-xs sm:text-sm text-gray-400 mb-2 font-medium">{report.date}</p>
+            <h3 className="text-base sm:text-lg font-semibold text-white mb-3 leading-snug line-clamp-2">{report.title}</h3>
+            <p className="text-gray-300 mb-4 sm:mb-6 text-xs sm:text-sm leading-relaxed line-clamp-3">{report.description}</p>
             <a
                 href={report.pdfUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-5 py-2.5 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold rounded-lg shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-75"
+                className="inline-flex items-center justify-center w-full sm:w-auto px-4 py-2 sm:px-5 sm:py-2.5 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold rounded-lg shadow-md transition-colors focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:ring-opacity-75"
             >
                 {/* SVG icon for download */}
-                <svg className="w-5 h-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <svg className="w-4 h-4 sm:w-5 sm:h-5 mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
                 </svg>
-                Download PDF
+                <span className="text-xs sm:text-sm">Download PDF</span>
             </a>
         </div>
     );
@@ -131,7 +131,7 @@ const FinancialResults = () => {
     return (
         <div className="min-h-screen  text-gray-200 font-sans antialiased p-4 md:p-8 lg:p-12">
             <header className="mb-16 text-center">
-                <h1 className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#CDAB65] to-[#F5D5A2] mb-4 font-noir">
+                <h1 className="text-3xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-[#CDAB65] to-[#F5D5A2] mb-4 font-noir">
                     FINANCIAL RESULTS
                 </h1>
 

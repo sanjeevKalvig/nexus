@@ -20,14 +20,14 @@ const HolidayHome = () => {
   ];
 
   return (
-    <div className="bg-[#0D131A] text-white font-sans py-20 px-4 sm:px-6 lg:px-8 ">
+    <div className="bg-[#0D131A] text-white font-sans lg:py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="relative max-w-7xl mx-auto flex flex-col gap-16 pt-24">
         
 
         {/* Big outline background text */}
         <div
           aria-hidden="true"
-          className="absolute left-1 top-0 uppercase font-extrabold text-transparent  font-noir "
+          className="absolute left-1 top-0 uppercase font-extrabold text-transparent  font-noir hidden lg:flex  "
           style={{
             fontSize: "120px", // Increased size for impact
             lineHeight: 1,

@@ -19,7 +19,7 @@ const ResidentialSection = () => {
   ];
 
   return (
-    <div className="bg-[#0D131A] text-white font-sans py-20 px-4 sm:px-6 lg:px-8 ">
+    <div className="bg-[#0D131A] text-white font-sans lg:py-20 px-4 sm:px-6 lg:px-8 ">
       <div className="relative max-w-7xl mx-auto flex flex-col gap-16 ">
         {/* Top Pre-Header Text */}
         <h3 className="text-2xl text-center mb-20">
@@ -29,7 +29,7 @@ const ResidentialSection = () => {
         {/* Big outline background text (Kept offset for effect, as per original visual) */}
         <div
           aria-hidden="true"
-          className="absolute left-1 top-20 uppercase font-extrabold text-transparent  font-noir "
+          className="absolute left-1 top-20 uppercase font-extrabold text-transparent  font-noir hidden lg:flex "
           style={{
             fontSize: "120px", // Increased size for impact
             lineHeight: 1,
