@@ -25,7 +25,7 @@ const AboutUs = () => {
                 <span className="text-[#F4D48D]">ABOUT</span>{" "}
                 <span className="text-white">US</span>
               </h2>
-              <p className="text-[1.375rem] text-gray-300 mt-8 max-w-4xl lgplus:text-[1.rem]   2xl:text-[1.375rem] 2xlplus:text-[2rem]"> 
+              <p className="text-[1.375rem] text-gray-300 mt-8 max-w-4xl lg:text-[20px] lgplus:text-[1rem]   2xl:text-[1.375rem] 2xlplus:text-[2rem]"> 
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
                 text ever since the 1500s, when an unknown printer took a galley
@@ -42,7 +42,7 @@ const AboutUs = () => {
                 <h3 className="text-[2rem] text-[#F4D48D] font-semibold mb-4 lgplus:text-[2.5rem] 2xlplus:text-[5rem] "> 
                   Mission
                 </h3>
-                <p className="text-[1.25rem] text-gray-300 leading-relaxed lgplus:text-[1rem] 2xl:text-[0.9375rem] 2xlplus:text-[1.5rem]"> 
+                <p className="text-[1.25rem] text-gray-300 leading-relaxed  lg:text-[15px] lgplus:text-[1rem] 2xl:text-[0.9375rem] 2xlplus:text-[1.5rem]"> 
                   Nexus Group provides energy infrastructure solutions for
                   electric power delivery and pipeline installation. We also
                   work on infrastructure design as well as shoreline sites.
@@ -55,7 +55,7 @@ const AboutUs = () => {
                 <h3 className="text-[2rem] text-[#F4D48D] font-semibold mb-4 lgplus:text-[2.5rem] 2xlplus:text-[5rem] "> {/* 32px */}
                   Vision
                 </h3>
-                <p className="text-[1.25rem] text-gray-300 leading-relaxed lgplus:text-[1rem] 2xl:text-[0.9375rem] 2xlplus:text-[1.5rem]"> {/* 20px, 15px */}
+                <p className="text-[1.25rem] text-gray-300 leading-relaxed lg:text-[15px] lgplus:text-[1rem] 2xl:text-[0.9375rem] 2xlplus:text-[1.5rem]"> {/* 20px, 15px */}
                   To build a global enterprise for all our stakeholders'
                   priorities and for the public, Nexus Group wants to create a
                   great future for our country by empowering a million young
@@ -67,7 +67,7 @@ const AboutUs = () => {
         </div>
 
         {/* Right Column */}
-        <div className="relative flex-1 flex flex-col justify-between max-w-[700px] lg:max-w-[850px] xl:max-w-[850px]">
+        <div className="relative flex-1 flex flex-col justify-between max-w-[1000px] md:w-full lg:max-w-[850px] xl:max-w-[850px] ">
           {/* Background div behind the image */}
           <div
             className="absolute bg-[#011925] inset-0 w-full h-auto -mt-8 z-0 2xl:hidden md:hidden "
@@ -81,7 +81,7 @@ const AboutUs = () => {
           <img
             src="/assets/building.png"
             alt="Building"
-            className="w-full h-auto object-cover rounded-md relative z-10  "
+            className="w-full h-auto object-cover rounded-md relative z-10 lg:mt-20 xl:mt-0 "
             style={{
               clipPath: "polygon(0% 10%, 0% 79%, 100% 100%, 100% 1%)",
             }}
@@ -108,7 +108,7 @@ const AboutUs = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 xl:gap-10 relative">
 
             {/* Vertical divider for medium+ screens */}
-            <div className="hidden md:block absolute top-0 bottom-0 2xl:left-[47%] w-px bg-[#F4D48D] transform -translate-x-1/2 text-[1.125rem]
+            <div className="hidden xl:block absolute top-0 bottom-0 2xl:left-[47%] w-px bg-[#F4D48D] transform -translate-x-1/2 text-[1.125rem]
              text-gray-300 2xlplus: lgplus:left-[48%] xlplus:left-[49%] 2xlplus:left-[48%]"></div>
 
             {/* Safety */}

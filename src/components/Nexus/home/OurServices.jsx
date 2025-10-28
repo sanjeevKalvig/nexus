@@ -2,97 +2,129 @@ import React from "react";
 
 const OurServices = () => {
   return (
-    <section className="text-white py-16 px-4 sm:py-24">
-      {/* Heading - Reduced from 2.5rem/6rem/7rem to 1.875rem/4.5rem/5.25rem */}
-      <h2 className="text-[1.875rem] sm:text-[4.5rem] font-semibold text-center mb-12 sm:mb-20 2xlplus:text-[5.25rem]">
+    <section className="text-white py-8 px-4 sm:py-12 md:py-16 lg:py-20 xl:py-24">
+      {/* Heading - Progressive scaling */}
+      <h2 className="text-[1.5rem] sm:text-[2rem] md:text-[2.5rem] lg:text-[3.5rem] xl:text-[4.5rem] font-semibold text-center mb-8 sm:mb-12 md:mb-16 lg:mb-18 xl:mb-20 2xlplus:text-[5.25rem]">
         <span className="text-white">OUR </span>
         <span className="text-[#F4D48D]">VERTICALS</span>
       </h2>
 
-      {/* Cards Grid */}
-      <div className="max-w-7xl mx-auto grid place-items-center gap-y-12 sm:grid-cols-2 xl:grid-cols-3 sm:gap-x-20 sm:gap-y-16">
-        {/* Card 1 - Reduced text and images by 25% */}
-        <div
-          className="bg-[#01141E] text-center flex flex-col items-center justify-between
-            w-[13.5969rem] h-[19.606rem] px-6 py-10 rounded-[0.9375rem]
-            sm:w-[22.9375rem] sm:h-[33.075rem] sm:p-8 2xl:7-[rem]"
-        >
-          {/* Original: w-[5.625rem] h-[8.125rem] → Reduced to w-[4.21875rem] h-[6.09375rem] */}
-          <div className="w-[4.21875rem] h-[6.09375rem] mb-6 sm:w-[7.03125rem] sm:h-[9.84375rem] flex items-center justify-center">
+      {/* Cards Grid - Responsive grid with proper spacing */}
+      <div className="max-w-7xl mx-auto grid place-items-center gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-y-16 xl:gap-x-20 sm:grid-cols-2 xl:grid-cols-3">
+        
+        {/* Card 1 - Progressive sizing */}
+        <div className="bg-[#01141E] text-center flex flex-col items-center justify-between rounded-[0.625rem] sm:rounded-[0.75rem] md:rounded-[0.875rem] xl:rounded-[0.9375rem]
+          w-[280px] h-[360px] px-4 py-6
+          sm:w-[300px] sm:h-[400px] sm:px-5 sm:py-7
+          md:w-[320px] md:h-[440px] md:px-5 md:py-8
+          lg:w-[340px] lg:h-[480px] lg:px-6 lg:py-9
+          xl:w-[367px] xl:h-[529px] xl:px-6 xl:py-10">
+          
+          {/* Image container with progressive sizing */}
+          <div className="mb-4 sm:mb-5 md:mb-6 xl:mb-6 flex items-center justify-center
+            w-[60px] h-[80px]
+            sm:w-[70px] sm:h-[90px]
+            md:w-[80px] md:h-[100px]
+            lg:w-[90px] lg:h-[110px]
+            xl:w-[112px] xl:h-[130px]">
             <img
               src="/assets/nexusepc.png"
               alt="NEXUS EPC"
               className="w-full h-full object-contain"
             />
           </div>
-          <p className="text-gray-300 text-[0.558rem] font-normal leading-relaxed sm:text-[0.9375rem] 2xlplus:text-[1.05rem]">
+          
+          <p className="text-gray-300 font-normal leading-relaxed text-center
+            text-[0.75rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[0.9rem] xl:text-[0.9375rem] 2xlplus:text-[1.05rem]">
             Lorem Ipsum is simply dummy text of the printing
             <br />
             and typesetting industry.
           </p>
-          <button
-            className="mt-6 bg-[#002538] text-[#f2f1ef] font-normal rounded-[0.625rem]
-              w-[6.6688rem] h-[2.0375rem] text-[0.558rem]
-              sm:w-[11.25rem] sm:h-[3.4375rem] sm:text-[0.9375rem] sm:rounded-[0.9375rem]"
-          >
+          
+          <button className="mt-4 sm:mt-5 md:mt-6 xl:mt-6 bg-[#002538] text-[#f2f1ef] font-normal
+            w-[120px] h-[32px] text-[0.75rem] rounded-[0.5rem]
+            sm:w-[140px] sm:h-[36px] sm:text-[0.8rem] sm:rounded-[0.6rem]
+            md:w-[160px] md:h-[40px] md:text-[0.85rem] md:rounded-[0.7rem]
+            lg:w-[170px] lg:h-[44px] lg:text-[0.9rem] lg:rounded-[0.8rem]
+            xl:w-[180px] xl:h-[55px] xl:text-[0.9375rem] xl:rounded-[0.9375rem]">
             VIEW MORE
           </button>
         </div>
 
-        {/* Card 2 */}
-        <div
-          className="bg-[#01141E] text-center flex flex-col items-center justify-between
-            w-[13.5969rem] h-[19.606rem] px-6 py-10 rounded-[0.9375rem]
-            sm:w-[22.9375rem] sm:h-[33.075rem] sm:p-8"
-        >
-          {/* Original: w-[5rem] h-[6.875rem] → Reduced to w-[3.75rem] h-[5.15625rem] */}
-          {/* Original: w-[18.625rem] h-[12.5rem] → Reduced to w-[13.96875rem] h-[9.375rem] */}
-          <div className="w-[3.75rem] h-[5.15625rem] mb-6 sm:w-[13.96875rem] sm:h-[9.375rem] flex items-center justify-center">
+        {/* Card 2 - Progressive sizing */}
+        <div className="bg-[#01141E] text-center flex flex-col items-center justify-between rounded-[0.625rem] sm:rounded-[0.75rem] md:rounded-[0.875rem] xl:rounded-[0.9375rem]
+          w-[280px] h-[360px] px-4 py-6
+          sm:w-[300px] sm:h-[400px] sm:px-5 sm:py-7
+          md:w-[320px] md:h-[440px] md:px-5 md:py-8
+          lg:w-[340px] lg:h-[480px] lg:px-6 lg:py-9
+          xl:w-[367px] xl:h-[529px] xl:px-6 xl:py-10">
+          
+          {/* Image container - Ākāsa logo sizing */}
+          <div className="mb-4 sm:mb-5 md:mb-6 xl:mb-6 flex items-center justify-center
+            w-[50px] h-[65px]
+            sm:w-[60px] sm:h-[75px]
+            md:w-[70px] md:h-[85px]
+            lg:w-[80px] lg:h-[95px]
+            xl:w-[223px] xl:h-[150px]">
             <img
               src="/assets/aakasa2.svg"
               alt="Ākāsa"
               className="w-full h-full object-contain"
             />
           </div>
-          <p className="text-gray-300 text-[0.558rem] font-normal leading-relaxed sm:text-[0.9375rem] 2xlplus:text-[1.05rem]">
+          
+          <p className="text-gray-300 font-normal leading-relaxed text-center
+            text-[0.75rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[0.9rem] xl:text-[0.9375rem] 2xlplus:text-[1.05rem]">
             Lorem Ipsum is simply dummy text of the printing
             <br />
             and typesetting industry.
           </p>
-          <button
-            className="mt-6 bg-[#002538] text-[#f2f1ef] font-normal rounded-[0.625rem]
-              w-[6.6688rem] h-[2.0375rem] text-[0.558rem]
-              sm:w-[11.25rem] sm:h-[3.4375rem] sm:text-[0.9375rem] sm:rounded-[0.9375rem]"
-          >
+          
+          <button className="mt-4 sm:mt-5 md:mt-6 xl:mt-6 bg-[#002538] text-[#f2f1ef] font-normal
+            w-[120px] h-[32px] text-[0.75rem] rounded-[0.5rem]
+            sm:w-[140px] sm:h-[36px] sm:text-[0.8rem] sm:rounded-[0.6rem]
+            md:w-[160px] md:h-[40px] md:text-[0.85rem] md:rounded-[0.7rem]
+            lg:w-[170px] lg:h-[44px] lg:text-[0.9rem] lg:rounded-[0.8rem]
+            xl:w-[180px] xl:h-[55px] xl:text-[0.9375rem] xl:rounded-[0.9375rem]">
             VIEW MORE
           </button>
         </div>
 
-        {/* Card 3 */}
-        <div
-          className="bg-[#01141E] text-center flex flex-col items-center justify-between
-            w-[13.5969rem] h-[19.606rem] px-6 py-10 rounded-[0.9375rem]
-            sm:w-[22.9375rem] sm:h-[33.075rem] sm:p-8"
-        >
-          {/* Original: w-[5.3125rem] h-[7.5rem] → Reduced to w-[3.984375rem] h-[5.625rem] */}
-          {/* Original: w-[18.75rem] h-[12.5rem] → Reduced to w-[14.0625rem] h-[9.375rem] */}
-          <div className="w-[3.984375rem] h-[5.625rem] mb-6 sm:w-[14.0625rem] sm:h-[9.375rem] flex items-center justify-center">
+        {/* Card 3 - Progressive sizing */}
+        <div className="bg-[#01141E] text-center flex flex-col items-center justify-between rounded-[0.625rem] sm:rounded-[0.75rem] md:rounded-[0.875rem] xl:rounded-[0.9375rem]
+          w-[280px] h-[360px] px-4 py-6
+          sm:w-[300px] sm:h-[400px] sm:px-5 sm:py-7
+          md:w-[320px] md:h-[440px] md:px-5 md:py-8
+          lg:w-[340px] lg:h-[480px] lg:px-6 lg:py-9
+          xl:w-[367px] xl:h-[529px] xl:px-6 xl:py-10">
+          
+          {/* Image container - Driveline logo sizing */}
+          <div className="mb-4 sm:mb-5 md:mb-6 xl:mb-6 flex items-center justify-center
+            w-[55px] h-[70px]
+            sm:w-[65px] sm:h-[80px]
+            md:w-[75px] md:h-[90px]
+            lg:w-[85px] lg:h-[100px]
+            xl:w-[225px] xl:h-[150px]">
             <img
               src="/assets/drvline2.svg"
               alt="NEXUS DRIVELINE"
               className="w-full h-full object-contain"
             />
           </div>
-          <p className="text-gray-300 text-[0.558rem] font-normal leading-relaxed sm:text-[0.9375rem] 2xlplus:text-[1.05rem]">
+          
+          <p className="text-gray-300 font-normal leading-relaxed text-center
+            text-[0.75rem] sm:text-[0.8rem] md:text-[0.85rem] lg:text-[0.9rem] xl:text-[0.9375rem] 2xlplus:text-[1.05rem]">
             Lorem Ipsum is simply dummy text of the printing
             <br />
             and typesetting industry.
           </p>
-          <button
-            className="mt-7 bg-[#002538] text-[#f2f1ef] font-normal rounded-[0.625rem]
-              w-[6.6688rem] h-[2.0375rem] text-[0.558rem]
-              sm:w-[11.25rem] sm:h-[3.4375rem] sm:text-[0.9375rem] sm:rounded-[0.9375rem]"
-          >
+          
+          <button className="mt-4 sm:mt-5 md:mt-6 xl:mt-7 bg-[#002538] text-[#f2f1ef] font-normal
+            w-[120px] h-[32px] text-[0.75rem] rounded-[0.5rem]
+            sm:w-[140px] sm:h-[36px] sm:text-[0.8rem] sm:rounded-[0.6rem]
+            md:w-[160px] md:h-[40px] md:text-[0.85rem] md:rounded-[0.7rem]
+            lg:w-[170px] lg:h-[44px] lg:text-[0.9rem] lg:rounded-[0.8rem]
+            xl:w-[180px] xl:h-[55px] xl:text-[0.9375rem] xl:rounded-[0.9375rem]">
             VIEW MORE
           </button>
         </div>
