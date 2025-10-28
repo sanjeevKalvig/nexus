@@ -16,11 +16,31 @@ const EPC_CompanyProfile = () => {
      <Epc_Navbar />
 
       {/* 1. Company Section */}
-      <section className="relative py-20 pl-20 sm:pl-32">
-        <h2 className="text-[1.5rem] sm:text-[2rem] text-[#F4D48D] tracking-widest mb-6">
-          COMPANY
-        </h2>
-      </section>
+      <div className="relative sm:ml-6 md:ml-8 lg:ml-28 mt-[7rem] ml-10">
+        {/* Big outline background text */}
+        <div
+          aria-hidden="true"
+          className="absolute -left-6 inset-0 flex items-center pointer-events-none uppercase font-extrabold text-transparent select-none sm:-left-8 md:-left-10 lg:-left-12"
+          style={{
+            fontSize: "clamp(40px, 12vw, 120px)",
+            lineHeight: 1,
+            whiteSpace: "nowrap",
+            WebkitTextStroke: "1px rgba(255,255,255,0.06)",
+          }}
+        >
+          Company
+        </div>
+
+        {/* Foreground title */}
+        <div className="relative z-10 flex">
+          <h2
+            className="m-0 leading-tight font-extrabold uppercase text-[#F4D48D] drop-shadow-[0_2px_8px_rgba(0,0,0,0.35)] translate-y-3 sm:translate-y-4 md:translate-y-5 lg:translate-y-6"
+            style={{ fontSize: "clamp(28px, 8vw, 96px)" }}
+          >
+            Company
+          </h2>
+        </div>
+      </div>
 
       {/* 2. Chairman's Note */}
       <section className="relative flex flex-col xl:flex-row items-center justify-between px-6 sm:px-16 py-16 max-w-[1400px] mx-auto mb-1">

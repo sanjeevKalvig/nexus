@@ -9,11 +9,14 @@ import EPC_ReportPage from "./pages/Nexus_EPC/EPC_ReportPage";
 import Akasa_HomePage from "./pages/Akasa_Spaces/Akasa_HomePage";
 import Akasa_CompanyProfile from "./pages/Akasa_Spaces/Akasa_CompanyProfile";
 import Akasa_Project from "./pages/Akasa_Spaces/Akasa_Project";
+import CompanyProfie from "./pages/Nexus/CompanyProfie";
+
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Nexus_HomePage />} />
+      <Route path="/companyprofile" element={<CompanyProfie/>} />
       <Route path="/epc" element={<EPC_HomePage />} />
       <Route path="/epc_ourservices" element={<EPC_OurServices />} />
       <Route path="/epc_client" element={<EPC_ClientPage />} />

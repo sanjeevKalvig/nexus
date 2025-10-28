@@ -7,7 +7,8 @@ function HeroSection() {
         {/* Background outline text – fluid size with clamp() */}
         <div
           aria-hidden="true"
-          className="absolute inset-0 flex items-center pointer-events-none uppercase font-extrabold text-transparent select-none font-noir"
+          className="absolute inset-0 flex items-center pointer-events-none uppercase font-extrabold 
+          text-transparent select-none font-noir"
           style={{
             fontSize: "clamp(30px, 8vw, 110px)", // scales from mobile → desktop
             lineHeight: 1,

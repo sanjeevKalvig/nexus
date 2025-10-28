@@ -19,10 +19,10 @@ const ResidentialSection = () => {
   ];
 
   return (
-    <div className="bg-[#0D131A] text-white font-sans lg:py-20 px-4 sm:px-6 lg:px-8 ">
+    <div className="bg-[#0D131A] text-white font-sans lg:py-20 px-4 sm:px-6 lg:px-8 mt-[6rem] ">
       <div className="relative max-w-7xl mx-auto flex flex-col gap-16 ">
         {/* Top Pre-Header Text */}
-        <h3 className="text-2xl text-center mb-20">
+        <h3 className="text-2xl text-center mb-4">
           We Have Solutions for All Your Space Related Issues!
         </h3>
 

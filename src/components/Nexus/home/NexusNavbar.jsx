@@ -9,7 +9,7 @@ const NexusNavbar = () => {
 
   const menuItems = [
     { name: "Home", path: "/" },
-
+    { name: "Profile", path: "/companyprofile" },
     { name: "Contact Us", path: "/contactus" },
     { name: "Nexus EPC", path: "/epc" },
     { name: "Nexus Akasa", path: "/akasa" },
