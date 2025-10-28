@@ -34,8 +34,6 @@ const HeroSection = () => {
         className="absolute inset-0 w-[120%] h-full object-cover opacity-40 2xl:scale-[1.2] xlplus:scale-[1.2] xl:translate-x-[10%] 2xlplus:scale-[1.2] 2xl:translate-x-[10%] 2xlplus:translate-x-[6%]"
       />
 
-      
-
       {/* Hero Content */}
       <div className="relative z-10 h-full flex items-center top-[2rem] left-[2rem] sm:top-[4rem] sm:left-[5rem]">
         <div className="w-full max-w-[90%]">
@@ -45,11 +43,11 @@ const HeroSection = () => {
           </h1>
 
           <p className="text-[0.7rem] sm:text-[0.84rem] text-[#F5D5A2] mt-4 leading-snug">
-            Lorem Ipsum is simply dummy text of the printing and <br />
-            typesetting industry. Lorem Ipsum has been the industry's <br />
-            standard dummy text ever since the 1500s, when an unknown <br />
-            printer took a galley of type and scrambled it to make a <br />
-            type specimen book.
+            We turn bold ideas into real-world impact and <br />
+            drive progress through creativity and precision. <br />
+            Our team blends modern design, technology, and <br />
+            innovation to shape the future of industries <br />
+            and inspire growth with every solution we build.
           </p>
 
           <button className="uppercase mt-6 w-[8rem] h-[2.6rem] font-normal text-[0.7rem] sm:w-[8rem] sm:h-[2.6rem] sm:py-2 sm:text-[0.84rem] border border-[#F5D5A2] text-white hover:bg-white hover:text-black transition-all duration-300">
@@ -83,7 +81,11 @@ const HeroSection = () => {
             <button
               key={index}
               onClick={() => goToImage(index)}
-              className={`transition-colors duration-300 ${isActive ? "text-white font-semibold" : "text-[#F5D5A2]/60 hover:text-[#F5D5A2]"}`}
+              className={`transition-colors duration-300 ${
+                isActive
+                  ? "text-white font-semibold"
+                  : "text-[#F5D5A2]/60 hover:text-[#F5D5A2]"
+              }`}
               aria-label={`Go to slide ${index + 1}`}
             >
               {String(index + 1).padStart(2, "0")}

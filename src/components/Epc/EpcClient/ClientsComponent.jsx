@@ -10,7 +10,9 @@ const CLIENT_LOGOS = [
 
 export default function ClientsComponent({
   subtitle = "TRUSTED COMPANIES",
-  description = `Lorem ipsum dolor sit amet, consectetur dolor elit. Integer adipiscing erat eget risus sollicitudin pellentesque et non erat; consectetur amet.`,
+  description = `We are trusted by leading global organizations for our commitment to quality and innovation.
+Our long-term partnerships reflect reliability, transparency, and performance.
+Together, we build success through collaboration and excellence.`,
   logos = CLIENT_LOGOS,
   onPrev,
   onNext,

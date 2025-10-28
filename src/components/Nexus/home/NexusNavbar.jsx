@@ -79,14 +79,14 @@ const NexusNavbar = () => {
         <div className="absolute bottom-20 flex flex-col items-center justify-center">
           <div className="relative flex flex-col items-center justify-center">
             <span
-              className="absolute text-[130px] md:text-[160px] font-bold text-white/5 tracking-[10px] leading-none z-0"
+              className="absolute text-[100px] md:text-[160px] font-bold text-white/5 tracking-[10px] leading-none z-0 font-noir"
               style={{
                 WebkitTextStroke: "1.5px rgba(255,255,255,0.06)",
               }}
             >
               NEXUS
             </span>
-            <span className="relative z-10 text-[#c9a961] text-[42px] md:text-[50px] font-bold tracking-[10px]">
+            <span className="relative z-10 text-[#c9a961] text-[42px] md:text-[50px]  tracking-[10px] font-noir translate-y-8 font-extrabold">
               GROUP
             </span>
           </div>

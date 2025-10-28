@@ -2,15 +2,16 @@ import React from "react";
 
 // Reusable Metric Block Component
 const MetricBlock = ({ value, label, description, isMoney = false }) => (
-  <div className="
+  <div
+    className="
       flex flex-col sm:flex-row 
       justify-between items-start sm:items-center 
       bg-[#012337] 
       p-4 sm:p-6 lg:p-8 
       rounded-lg shadow-md 
       gap-4
-    ">
-    
+    "
+  >
     {/* Value & Label */}
     <div className="w-full sm:w-1/3">
       <div className="flex items-baseline">
@@ -29,14 +30,16 @@ const MetricBlock = ({ value, label, description, isMoney = false }) => (
     </div>
 
     {/* Icon & Description */}
-    <div className="
+    <div
+      className="
         w-full sm:w-2/3 
         flex items-center 
         gap-2 sm:gap-4 
         p-2 sm:p-4 
         bg-[#00385A] 
         rounded-lg
-      ">
+      "
+    >
       <div className="flex-shrink-0">
         <img
           className="w-8 h-8 sm:w-10 sm:h-10 lg:w-12 lg:h-12"
@@ -107,16 +110,16 @@ const AnnualReportHeader = () => {
             {/* Body Text (using the actual text from the image) */}
             <div className="text-gray-400 text-base leading-relaxed max-w-lg space-y-4 pt-4">
               <p>
-                Lorem Ipsum is simply dummy text of the printing and generated
-                in writing. Lorem Ipsum has been used to identify the keypoints
-                about the application in this paper.
+                Nexus EPC continues to strengthen its foundation of performance
+                through disciplined execution and innovation. Our focus on
+                operational excellence drives sustainable growth and consistent
+                value creation.
               </p>
               <p>
-                In addition, it is based on a general way that all components of
-                the most simple properties have been handled as early as a
-                calendar. But also in the meantime, modern applications,
-                smoothing materials, writing data or handling systems have
-                available, and more
+                We leverage advanced technologies, efficient processes, and a
+                skilled workforce to optimize every phase of our operations.
+                Through strategic planning and continuous improvement, we ensure
+                long-term success for our clients and stakeholders.
               </p>
             </div>
           </div>

@@ -6,19 +6,19 @@ function Why_Choose_Us() {
       id: "0",
       heading: "Exclusive Ideas",
       subHeading:
-        "We create a different exclusive working strategy for every single project.",
+        "We craft tailored strategies for every project, ensuring innovation and excellence in every step of execution..",
     },
     {
       id: "1",
       heading: "Professionals",
       subHeading:
-        "We at Nexus Group work with expertise and effort. We are a team of experts who are highly experienced in their field.",
+        "At Nexus EPC, our team combines expertise, dedication, and years of industry experience to deliver superior results.",
     },
     {
       id: "2",
       heading: "Customer Relations",
       subHeading:
-        "We are always ready to help the customer until their projects get done.",
+        "We stay committed to our clients from start to finish, providing continuous support until every project is successfully completed.",
     },
   ]
 

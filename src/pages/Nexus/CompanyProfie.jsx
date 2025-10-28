@@ -48,24 +48,21 @@ const CompanyProfie = () => {
           </h2>
           <h3 className="text-[#F4D48D] mb-6 text-[1.5rem]">Designation</h3>
           <p className="text-gray-300 leading-relaxed text-[1rem] max-w-xl">
-            At Nexus EPC we take a certain pride in our vision and insight into
-            your world.
+            At Nexus EPC, we take immense pride in our vision and commitment to
+            building a better tomorrow.
             <br />
             <br />
-            As a diversified holding company, we are active in a wide range of
-            industries, including pipeline, road infrastructure, civil
-            structures, and more. In every part of the business, we are
-            dedicated to delighting our stakeholders and creating memorable
-            moments for all our customers.
+            As a diversified enterprise, we operate across multiple sectors —
+            from pipelines and infrastructure to civil and structural works. In
+            every endeavor, our goal remains the same: to deliver excellence,
+            uphold integrity, and create lasting value for our clients and
+            partners.
             <br />
             <br />
-            It helps us appreciate your needs better. It is no secret that when
-            you choose NEXUS EPC, you choose to escape mediocrity and take a
-            giant leap into a bigger and better future. A journey of success
-            always requires foresight, courage, and preparedness. All these,
-            along with the power of trust, have allowed Nexus EPC to
-            consistently achieve its goals. Our inspiration comes from your
-            trust and belief in our ability to deliver.
+            Your trust inspires us to go beyond expectations. Choosing Nexus EPC
+            means choosing innovation, quality, and reliability. Every milestone
+            we achieve is driven by foresight, dedication, and collaboration —
+            values that continue to define who we are and what we stand for.
           </p>
 
           <br />
