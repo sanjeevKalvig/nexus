@@ -32,7 +32,7 @@ const OurServices = () => {
   return (
     <section className="bg-[#000E15] text-[#EAEAEA]">
       {/* Header band */}
-      <div className="relative mx-auto px-4 pt-8 pb-16 sm:px-6 md:px-8 xl:pl-28 xl:pt-12 xl:pb-24">
+      <div className="relative mx-auto px-4 pt-8 pb-16 sm:px-6 md:px-8 xl:pl-28 xl:pt-12 xl:pb-24 mt-10 sm:translate-x-6">
         {/* Big outline background text */}
         <div
           aria-hidden="true"
@@ -64,14 +64,14 @@ const OurServices = () => {
         </p>
 
         {/* First row: 1 card (mobile), 2 cards (md), 3 cards (lg) */}
-        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 xl:gap-6">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-3 lg:grid-cols-3 xl:gap-6">
           {SERVICES.slice(0, 3).map((svc) => (
             <ServiceCard key={svc.title} {...svc} />
           ))}
         </div>
 
         {/* Second row: 1 card (mobile), 2 cards (md+) */}
-        <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 md:mx-auto md:max-w-[600px] lg:max-w-[800px] xl:mt-6 xl:gap-6">
+        <div className="mt-4 grid grid-cols-1 gap-4 lg:grid-cols-2 md:mx-auto md:max-w-[600px] lg:max-w-[800px] xl:mt-6 xl:gap-6">
           {SERVICES.slice(3).map((svc) => (
             <ServiceCard key={svc.title} {...svc} />
           ))}

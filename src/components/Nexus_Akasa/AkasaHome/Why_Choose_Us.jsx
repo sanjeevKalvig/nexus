@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 function Why_Choose_Us() {
   const chooseUsReasons = [
@@ -20,7 +20,7 @@ function Why_Choose_Us() {
       subHeading:
         "We are always ready to help the customer until their projects get done.",
     },
-  ]
+  ];
 
   return (
     <div className="bg-[radial-gradient(at_top_left,_#05141D,_#03090D)] text-white py-12 sm:py-28 px-4 sm:px-10 md:px-20">
@@ -49,10 +49,13 @@ function Why_Choose_Us() {
 
         <div className="mt-16 sm:mt-32 flex flex-col sm:flex-row gap-5 justify-between">
           {chooseUsReasons.map((reason) => (
-            <div key={reason.id} className="flex flex-col gap-3 w-full sm:w-[260px]">
-              <div className="relative w-max flex gap-4 text-[#CDAB65] font-semibold text-xl sm:text-2xl">
+            <div
+              key={reason.id}
+              className="flex flex-col gap-3 w-full sm:w-[260px]"
+            >
+              <div className="relative w-max flex gap-4 text-[#CDAB65] font-semibold text-xl lg:text-2xl">
                 {reason.heading}
-                <span className="absolute top-[50%] -right-16 sm:-right-20 w-[30px] sm:w-[50px] border-b border-[#CDAB65]"></span>
+                <span className="absolute hidden xl:grid top-[50%] -right-16 sm:-right-20 w-[30px] sm:w-[50px] border-b border-[#CDAB65]"></span>
               </div>
               <p className="text-base sm:text-lg">{reason.subHeading}</p>
             </div>
@@ -60,7 +63,7 @@ function Why_Choose_Us() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Why_Choose_Us
+export default Why_Choose_Us;

@@ -16,7 +16,7 @@ const EPC_CompanyProfile = () => {
      <Epc_Navbar />
 
       {/* 1. Company Section */}
-      <div className="relative sm:ml-6 md:ml-8 lg:ml-28 mt-[7rem] ml-10">
+      <div className="relative sm:ml-6 md:ml-8 lg:ml-28 mt-[7rem] ml-10 translate-x-8">
         {/* Big outline background text */}
         <div
           aria-hidden="true"
