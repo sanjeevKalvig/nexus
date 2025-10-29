@@ -19,7 +19,7 @@ const Epc_Navbar = () => {
 
   return (
     <>
-      <nav className="fixed top-0 left-0 right-0 h-[70px] bg-transparent flex items-center justify-between px-8 z-[1000] ">
+      <nav className="absolute top-0 left-0 right-0 h-[70px] bg-transparent flex items-center justify-between px-8 z-[1000] ">
         <div className="flex items-center">
           <Link to="/epc">
             <img
@@ -32,7 +32,7 @@ const Epc_Navbar = () => {
 
         <button
           onClick={toggleMenu}
-          className="w-[30px] h-[24px] flex flex-col justify-between relative z-[1001] focus:outline-none"
+          className="fixed w-[30px] h-[24px] flex flex-col justify-between right-8 z-[1001] focus:outline-none"
           aria-label="Toggle menu"
         >
           <span

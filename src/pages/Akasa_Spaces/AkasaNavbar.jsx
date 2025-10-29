@@ -25,14 +25,14 @@ const AkasaNavbar = () => {
   return (
     <>
       {/* ---------- TOP BAR ---------- */}
-      <nav className="fixed top-0 left-0 right-0 h-[70px] bg-transparent flex items-center justify-between px-8 z-[1000]">
+      <nav className="absolute top-0 left-0 right-0 h-[70px] bg-transparent flex items-center justify-between px-8 z-[1000]">
         <Link to="/akasa">
           <img src="/assets/akasa.png" alt="Nexus Logo" className="h-14 w-auto" />
         </Link>
 
         <button
           onClick={toggleMenu}
-          className="w-[30px] h-[24px] flex flex-col justify-between relative z-[1001] focus:outline-none"
+          className="fixed w-[30px] h-[24px] flex flex-col justify-between  z-[1001] focus:outline-none right-8"
           aria-label="Toggle menu"
         >
           {[0, 1, 2].map(bar)}
