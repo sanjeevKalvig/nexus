@@ -1,6 +1,10 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const OurServices = () => {
+ 
+  const navigate = useNavigate();
+
   return (
     <section className="text-white py-8 px-4 sm:py-12 md:py-16 lg:py-20 xl:py-24">
       {/* Heading - Progressive scaling */}
@@ -45,7 +49,8 @@ const OurServices = () => {
             standards with precision, quality, and trust.
           </p>
 
-          <button
+          <button onClick={() => navigate('/epc')}
+
             className="mt-4 sm:mt-5 md:mt-6 xl:mt-6 bg-[#002538] text-[#f2f1ef] font-normal
             w-[120px] h-[32px] text-[0.75rem] rounded-[0.5rem]
             sm:w-[140px] sm:h-[36px] sm:text-[0.8rem] sm:rounded-[0.6rem]
@@ -92,6 +97,7 @@ const OurServices = () => {
           </p>
 
           <button
+            onClick={() => navigate("/akasa")}
             className="mt-4 sm:mt-5 md:mt-6 xl:mt-6 bg-[#002538] text-[#f2f1ef] font-normal
             w-[120px] h-[32px] text-[0.75rem] rounded-[0.5rem]
             sm:w-[140px] sm:h-[36px] sm:text-[0.8rem] sm:rounded-[0.6rem]
