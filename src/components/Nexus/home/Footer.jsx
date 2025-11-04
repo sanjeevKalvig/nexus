@@ -1,6 +1,4 @@
-import React from "react";
 import {
-  FaLinkedin,
   FaPhoneAlt,
   FaPaperPlane,
   FaMapMarkerAlt,
@@ -10,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="relative bg-black  text-white px-5 py-5 xl:px-16 xl:py-20 overflow-hidden">
       {/* Top Section */}
-      <div className="flex  sm:mb-20 lgplus:mb-8 2xl:mb-20 xl:flex-row justify-between items-start lgplus:px-[9rem] lgplus:pl-[15rem] 
+      <div className="flex pl-[1rem] sm:mb-20 lgplus:mb-8 2xl:mb-20 xl:flex-row justify-between items-start lg:pl-[11rem] lgplus:px-[9rem] lgplus:pl-[15rem] 
        xl:items-start xl:relative xl:px-[8rem]  xl:gap-0">
         {/* Column 1: Logo + LinkedIn */}
         <div className="flex flex-col gap-2 xl:mt-5 w-full xl:w-auto">
@@ -34,7 +32,7 @@ const Footer = () => {
               <img
                 src="/assets/Linkedin.svg"
                 alt="LinkedIn"
-                className="w-[40px] h-[13px] xl:w-[110px] xl:h-[28px]"
+                className="w-[40px] h-[13px] xl:w-[90px] xl:h-[25px] border p-1 rounded-md bg-slate-900"
               />
             </a>
           </div>

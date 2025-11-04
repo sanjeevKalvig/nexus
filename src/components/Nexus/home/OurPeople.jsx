@@ -2,7 +2,7 @@ import React from "react";
 
 const OurPeople = () => {
   return (
-    <div className="relative h-auto text-white overflow-hidden">
+    <div className="relative h-auto text-white overflow-hidden ">
       {/* Background Strip using clip-path - Responsive heights */}
       <div className="absolute top-0 left-0 w-full z-0
         h-[28rem] xs:h-[30rem] sm:h-[32rem] md:h-[34rem] lg:h-[31.375rem] xl:h-[43.875rem] xlplus:h-[45rem]">
@@ -10,11 +10,11 @@ const OurPeople = () => {
       </div>
 
       {/* Content Section - Responsive layout */}
-      <div className="relative z-10 flex flex-col lg:flex-row items-start px-4 py-6 h-full
-        sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-6 lg:py-14 xl:px-10 xl:py-20">
+      <div className="relative z-10 flex flex-col justify-center items-center lg:flex-row lg:items-start px-4 py-6 h-full
+        sm:px-6 sm:py-8 md:px-8 md:py-10 lg:px-6 lg:py-14 xl:px-10 xl:py-20 ">
         
         {/* Column 1 - Text Content */}
-        <div className="flex flex-col items-start w-full lg:w-auto
+        <div className="flex flex-col items-start  lg:w-full
           pl-4 sm:pl-6 md:pl-8 lg:pl-0 lg:ml-[2.5rem] xl:ml-[4rem]
           gap-4 sm:gap-6 md:gap-7 lg:gap-8
           mt-2 sm:mt-3 md:mt-4 lg:mt-1 xl:mt-[1.25rem]">
@@ -38,7 +38,7 @@ const OurPeople = () => {
               className="object-contain
                 w-[3rem] h-[3rem] xs:w-[3.5rem] xs:h-[3.5rem]
                 sm:w-[4rem] sm:h-[4.5rem] md:w-[5rem] md:h-[6rem]
-                lg:w-[6.25rem] lg:h-[7.813rem] 2xl:w-[9.375rem] 2xl:h-[12.5rem]"
+                 "
             />
           </div>
 
@@ -53,22 +53,22 @@ const OurPeople = () => {
 
           {/* Button - Responsive sizing */}
           <div className="w-full flex justify-start
-            mt-3 sm:mt-4 md:mt-5 lg:mt-auto">
+            mt-3 sm:mt-4 md:mt-5 lg:mt-auto ">
             <button className="font-semibold bg-[#F4D48D] text-black shadow-md hover:brightness-95
               w-[9rem] h-[2.5rem] text-[0.7rem] rounded-[0.6rem]
               xs:w-[10rem] xs:h-[2.7rem] xs:text-[0.75rem] xs:rounded-[0.65rem]
               sm:w-[11rem] sm:h-[3rem] sm:text-[0.8rem] sm:rounded-[0.7rem]
               md:w-[12rem] md:h-[3.2rem] md:text-[0.85rem] md:rounded-[0.75rem]
               lg:w-[13.75rem] lg:h-[3.625rem] lg:text-[0.938rem] lg:rounded-[1rem]
-              xl:w-[15.625rem] xl:h-[5.1875rem] xl:text-[1.172rem] xl:rounded-[1.25rem]
-              lg:mt-[4.375rem] xl:mt-[5.625rem]">
+                xl:text-[1.172rem] xl:rounded-[1.25rem]
+                ">
               MEET THE TEAM
             </button>
           </div>
         </div>
 
         {/* Card - Responsive positioning and sizing */}
-        <div className="bg-[#01141E] shadow-lg text-white flex flex-col justify-between mx-auto
+        <div className="relative bg-[#01141E] shadow-lg text-white flex flex-col justify-between mx-auto
           mt-6 sm:mt-8 md:mt-10 lg:absolute lg:right-6 lg:top-[13rem] xl:right-10 xl:top-[38%]
           w-[18rem] h-[11rem] rounded-[0.6rem]
           xs:w-[19rem] xs:h-[12rem] xs:rounded-[0.65rem]
@@ -76,8 +76,8 @@ const OurPeople = () => {
           md:w-[26rem] md:h-[16rem] md:rounded-[0.75rem]
           lg:w-[31.25rem] lg:h-[21.875rem] lg:rounded-[1rem] lg:mx-0
           xlplus:w-[38rem] 2xl:w-[43.8125rem] 2xlplus:w-[50rem]
-          xl:h-[29.75rem] xl:rounded-[1.25rem]
-          lg:transform lg:-translate-y-1/2">
+          xl:h-[26rem] xl:rounded-[1.25rem]
+          lg:transform lg:-translate-y-[70%] xl:-translate-y-[50%]">
           
           {/* Card Content */}
           <div className="p-3 sm:p-4 md:p-5 lg:p-8 xl:p-10 2xl:p-12
@@ -123,14 +123,10 @@ const OurPeople = () => {
                 dummy text ever since the 1500s.
               </p>
             </div>
-          </div>
 
-          {/* Arrow Controls - Responsive positioning and sizing */}
-          <div className="flex absolute right-1 bottom-1 self-end
-            gap-3 sm:gap-4 md:gap-5 lg:gap-8 xl:gap-8
-            p-1 sm:p-2 md:p-3 lg:p-6 xl:p-[0.4rem]
-            sm:right-2 sm:bottom-2 lg:right-2 lg:bottom-2
-            mt-2 sm:mt-3 md:mt-4 lg:mt-[2.5rem] xl:mt-[5rem] xlplus:mt-[7rem]">
+            {/* Arrow Controls - Responsive positioning and sizing */}
+          <div className="flex absolute  
+           right-2 gap-4 bottom-2 ">
             
             {/* Left Arrow */}
             <div className="border-y-transparent border-r-[#D1D5DB]
@@ -139,7 +135,7 @@ const OurPeople = () => {
               sm:w-[1rem] sm:h-[1rem] sm:border-y-[0.5rem] sm:border-r-[0.6rem]
               md:w-[1.2rem] md:h-[1.2rem] md:border-y-[0.6rem] md:border-r-[0.7rem]
               lg:w-[2.25rem] lg:h-[2.25rem] lg:border-y-[2.25rem] lg:border-r-[2.8125rem]
-              xl:w-[2.5rem] xl:h-[2.5rem] xl:border-y-[2.5rem] xl:border-r-[3rem]" />
+              " />
 
             {/* Right Arrow */}
             <div className="border-y-transparent border-l-[#D1D5DB]
@@ -148,7 +144,8 @@ const OurPeople = () => {
               sm:w-[1rem] sm:h-[1rem] sm:border-y-[0.5rem] sm:border-l-[0.6rem]
               md:w-[1.2rem] md:h-[1.2rem] md:border-y-[0.6rem] md:border-l-[0.7rem]
               lg:w-[2.25rem] lg:h-[2.25rem] lg:border-y-[2.25rem] lg:border-l-[2.8125rem]
-              xl:w-[2.5rem] xl:h-[2.5rem] xl:border-y-[2.5rem] xl:border-l-[3rem]" />
+              " />
+          </div>
           </div>
         </div>
       </div>

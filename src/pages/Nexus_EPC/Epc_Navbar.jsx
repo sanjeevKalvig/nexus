@@ -19,20 +19,20 @@ const Epc_Navbar = () => {
 
   return (
     <>
-      <nav className="absolute top-0 left-0 right-0 h-[70px] bg-transparent flex items-center justify-between px-8 z-[1000] ">
+      <nav className="absolute top-0 left-0 right-0 h-[70px]  flex items-center justify-between px-[2rem] lg:px-[4.4rem] z-[1000] ">
         <div className="flex items-center">
           <Link to="/epc">
             <img
               src="/assets/NexusEPC_logo.png"
               alt="Nexus Logo"
-              className="h-16 w-auto mt-5"
+              className="h-16 w-auto mt-6"
             />
           </Link>
         </div>
 
         <button
           onClick={toggleMenu}
-          className="fixed w-[30px] h-[24px] flex flex-col justify-between right-8 z-[1001] focus:outline-none"
+          className="fixed w-[3rem] h-[2rem] flex flex-col justify-between  z-[1001] focus:outline-none right-8"
           aria-label="Toggle menu"
         >
           <span

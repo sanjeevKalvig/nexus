@@ -27,7 +27,7 @@ const AboutUs = () => {
                 <span className="text-[#F4D48D]">ABOUT</span>{" "}
                 <span className="text-white">US</span>
               </h2>
-              <p className="text-[1.375rem] text-gray-300 mt-8 max-w-4xl lg:text-[20px] lgplus:text-[1rem]   2xl:text-[1.375rem] 2xlplus:text-[2rem]">
+              <p className="text-[1.375rem] text-gray-300 mt-8 max-w-4xl lg:text-[20px] lgplus:text-[1rem] ">
                 Nexus Group is built on the foundation of innovation, integrity,
                 and excellence. We deliver end-to-end engineering and
                 infrastructure solutions that empower businesses, shape
@@ -97,7 +97,7 @@ const AboutUs = () => {
 
       {/* Our Values - Overlapping half of the content container */}
       <div
-        className="relative z-20 mt-4 2xl:-mt-[27rem]  px-6 md:px-12 lg:px-24 xl:px-24 max-w-[1920px] mx-auto
+        className="relative z-20 mt-4 2xl:-mt-[38rem]  px-6 md:px-12 lg:px-24 xl:px-24 max-w-[1920px] mx-auto
        lgplus:mt-[6rem] xlplus:-mt-[20rem] 2xlplus:-mt-[20rem]"
       >
         {" "}

@@ -19,7 +19,7 @@ const ContactUs = () => {
         
         <h2 className="font-semibold leading-none
           text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl
-          sm:text-[2.2rem] md:text-[3.2rem] lg:text-[4rem] xl:text-[4.8rem] 2xl:text-[5.6rem]">
+          sm:text-[2.2rem] md:text-[3.2rem] lg:text-[3rem]  ">
           <span className="text-[#F4D48D]">CONTACT</span>{" "}
           <span className="text-white">US</span>
         </h2>
@@ -28,20 +28,17 @@ const ContactUs = () => {
           src="/assets/msgicon.png"
           alt="Message Icon"
           className="object-contain
-            w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 md:w-16 md:h-16 
-            lg:w-20 lg:h-20 xl:w-24 xl:h-24 2xl:w-28 2xl:h-28
-            md:w-[4rem] md:h-[4rem] lg:w-[5rem] lg:h-[5rem] 
-            xl:w-[6rem] xl:h-[6rem] 2xl:w-[8.25rem] 2xl:h-[8.25rem]"
+            w-8 h-8 xs:w-10 xs:h-10 sm:w-12 sm:h-12 lg:w-15 lg:h-15 xl:w-16 xl:h-16 2xl:w-20 2xl:h-20"
         />
       </div>
 
       {/* Form */}
-      <form className="flex flex-col gap-6 sm:gap-8 md:gap-10 lg:gap-12 xl:gap-16">
+      <form className="flex flex-col gap-6">
         <div className="grid grid-cols-1 lg:grid-cols-3 items-stretch
           gap-4 xs:gap-5 sm:gap-6 md:gap-8 lg:gap-10 xl:gap-12 2xl:gap-16">
           
           {/* Column 1 */}
-          <div className="flex flex-col h-full gap-4 sm:gap-5 md:gap-6 lg:gap-8 xl:gap-10">
+          <div className="flex flex-col h-full gap-4 ">
             <input
               type="text"
               placeholder="Name*"
@@ -64,7 +61,7 @@ const ContactUs = () => {
           </div>
 
           {/* Column 2 */}
-          <div className="flex flex-col h-full gap-4 sm:gap-5 md:gap-6 lg:gap-8 xl:gap-10">
+          <div className="flex flex-col h-full gap-4 ">
             <input
               type="text"
               placeholder="Phone*"
@@ -119,7 +116,7 @@ const ContactUs = () => {
           <img
             src="/assets/submitarrow.svg"
             alt="Arrow"
-            className="w-3 h-3 xs:w-4 xs:h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-7 xl:w-8 xl:h-8 2xl:w-10 2xl:h-10"
+            className="w-3 h-3 xs:w-4 xs:h-4 sm:w-5 sm:h-5 md:w-6 md:h-6 lg:w-7 lg:h-8 "
           />
         </button>
       </form>

@@ -15,22 +15,22 @@ function Work() {
   const imagePairs = [
     {
       before: '/assets/akasa/os1.jpg',
-      after: '/assets/akasa/os2.jpg',
+      after: '/assets/akasa/os1.jpg',
       title: 'Project 1'
     },
     {
       before: '/assets/akasa/os3.jpg',
-      after: '/assets/akasa/os4.jpg',
+      after: '/assets/akasa/os3.jpg',
       title: 'Project 2'
     },
     {
       before: '/assets/akasa/os5.jpg',
-      after: '/assets/akasa/os6.jpg',
+      after: '/assets/akasa/os5.jpg',
       title: 'Project 3'
     },
     {
       before: '/assets/akasa/hm1.jpg',
-      after: '/assets/akasa/hm2.jpg',
+      after: '/assets/akasa/hm1.jpg',
       title: 'Project 4'
     }
   ];
