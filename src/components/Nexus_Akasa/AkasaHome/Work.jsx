@@ -14,23 +14,18 @@ function Work() {
   // Array of 4 image pairs
   const imagePairs = [
     {
-      before: '/assets/akasa/os1.jpg',
-      after: '/assets/akasa/os1.jpg',
+      before: '/assets/akasa/before3.png',
+      after: '/assets/akasa/after3.png',
       title: 'Project 1'
     },
     {
-      before: '/assets/akasa/os3.jpg',
-      after: '/assets/akasa/os3.jpg',
+      before: '/assets/akasa/before2.png',
+      after: '/assets/akasa/after2.0.png',
       title: 'Project 2'
     },
     {
-      before: '/assets/akasa/os5.jpg',
-      after: '/assets/akasa/os5.jpg',
-      title: 'Project 3'
-    },
-    {
-      before: '/assets/akasa/hm1.jpg',
-      after: '/assets/akasa/hm1.jpg',
+      before: '/assets/akasa/before4.png',
+      after: '/assets/akasa/after4.png',
       title: 'Project 4'
     }
   ];
@@ -61,32 +56,29 @@ function Work() {
     });
   }, []);
 
-  const handleSliderChange = useCallback((e) => {
+  const handleInteraction = useCallback((clientX) => {
     if (!containerRef.current || !isDragging) return;
 
     const rect = containerRef.current.getBoundingClientRect();
-    const x = e.clientX - rect.left;
+    const x = clientX - rect.left;
     const percentage = (x / rect.width) * 100;
     
     updateSliderPosition(percentage);
   }, [isDragging, updateSliderPosition]);
 
-  const handleTouchChange = useCallback((e) => {
-    if (!containerRef.current) return;
+  const handleMouseMove = useCallback((e) => {
+    handleInteraction(e.clientX);
+  }, [handleInteraction]);
 
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = e.touches[0].clientX - rect.left;
-    const percentage = (x / rect.width) * 100;
-    
-    updateSliderPosition(percentage);
-  }, [updateSliderPosition]);
+  const handleTouchMove = useCallback((e) => {
+    handleInteraction(e.touches[0].clientX);
+  }, [handleInteraction]);
 
   const handleMouseDown = useCallback((e) => {
     e.preventDefault();
     setIsDragging(true);
-    setShowHint(false); // Hide hint on first interaction
+    setShowHint(false);
     
-    // Update position immediately on click
     const rect = containerRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const percentage = (x / rect.width) * 100;
@@ -95,9 +87,8 @@ function Work() {
 
   const handleTouchStart = useCallback((e) => {
     setIsDragging(true);
-    setShowHint(false); // Hide hint on first interaction
+    setShowHint(false);
     
-    // Update position immediately on touch
     const rect = containerRef.current.getBoundingClientRect();
     const x = e.touches[0].clientX - rect.left;
     const percentage = (x / rect.width) * 100;
@@ -119,7 +110,7 @@ function Work() {
   }, []);
 
   // Clean up animation frame on unmount
-  React.useEffect(() => {
+  useEffect(() => {
     return () => {
       if (animationFrameRef.current) {
         cancelAnimationFrame(animationFrameRef.current);
@@ -171,7 +162,6 @@ function Work() {
         Our commitment to quality and services ensure our clients happy. We're happy to make you feel more comfortable on your home.
       </p>
 
-    
       {/* Interactive Hint */}
       {showHint && (
         <div className="flex items-center justify-center mt-4 mb-2">
@@ -183,48 +173,44 @@ function Work() {
         </div>
       )}
 
-      {/* Before/After Comparison Slider */}
+      {/* Before/After Comparison Slider - Improved Version */}
       <div
         ref={containerRef}
         className='max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[75%] xl:max-w-[750px] m-auto mt-4 sm:mt-6 md:mt-8 lg:mt-10 relative overflow-hidden rounded-lg cursor-col-resize select-none touch-none group'
-        onMouseMove={handleSliderChange}
+        onMouseMove={handleMouseMove}
         onMouseDown={handleMouseDown}
-        onTouchMove={handleTouchChange}
+        onTouchMove={handleTouchMove}
         onTouchStart={handleTouchStart}
         onTouchEnd={handleTouchEnd}
         style={{ aspectRatio: '16/9' }}
       >
-        {/* Before Image */}
-        <img
-          src={currentPair.before}
-          alt="Before"
-          className='absolute w-full h-full object-cover select-none pointer-events-none'
-          draggable="false"
-        />
+        {/* Before Image - Full background */}
+        <div className="absolute inset-0">
+          <img
+            src={currentPair.before}
+            alt="Before"
+            className='w-full h-full object-cover select-none pointer-events-none'
+            draggable="false"
+          />
+        </div>
 
-        {/* After Image Container - Simplified approach */}
-        <div
-          className='absolute top-0 left-0 h-full overflow-hidden'
-          style={{ 
-            width: `${sliderPosition}%`,
-            transition: isDragging ? 'none' : 'width 0.1s ease-out'
-          }}
-        >
+        {/* After Image with CSS clip-path for smooth reveal */}
+        <div className="absolute inset-0">
           <img
             src={currentPair.after}
             alt="After"
             className='w-full h-full object-cover select-none pointer-events-none'
             draggable="false"
-            style={{ 
-              minWidth: '100%',
-              height: '100%'
+            style={{
+              clipPath: `polygon(0% 0%, ${sliderPosition}% 0%, ${sliderPosition}% 100%, 0% 100%)`,
+              transition: isDragging ? 'none' : 'clip-path 0.1s ease-out'
             }}
           />
         </div>
 
-        {/* Slider Handle with Enhanced Visibility */}
+        {/* Slider Handle */}
         <div
-          className='absolute top-0 bottom-0 w-1 bg-white cursor-col-resize transition-transform duration-75 group-hover:shadow-lg'
+          className='absolute top-0 bottom-0 w-1 bg-white cursor-col-resize transition-all duration-75 group-hover:shadow-lg'
           style={{
             left: `${sliderPosition}%`,
             transform: 'translateX(-50%)',
@@ -239,7 +225,7 @@ function Work() {
           </div>
         </div>
 
-        {/* Enhanced Before/After Labels with Icons */}
+        {/* Labels */}
         <div className="absolute bottom-4 left-4 bg-black bg-opacity-70 text-white px-3 py-2 rounded-lg text-sm font-medium border border-white border-opacity-20 select-none pointer-events-none flex items-center gap-2">
           <div className="w-2 h-2 bg-red-500 rounded-full"></div>
           Before
@@ -253,14 +239,6 @@ function Work() {
         <div className="absolute top-4 left-1/2 transform -translate-x-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full text-xs font-medium border border-white border-opacity-20 select-none pointer-events-none flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
           <BiSlider className="w-3 h-3" />
           Slide to compare
-        </div>
-
-        {/* Edge Handles for Better Discovery */}
-        <div className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-          <FaChevronLeft className="w-4 h-4 text-white" />
-        </div>
-        <div className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-20 rounded-full p-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-          <FaChevronRight className="w-4 h-4 text-white" />
         </div>
       </div>
 
